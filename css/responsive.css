@@ -1,0 +1,46 @@
+@media (max-width: 991.98px) {
+    .title{margin-top: 40px}
+    .tag{margin-bottom: 0; padding: 30px 0}
+    .slide__txt{padding-top: 75px;}
+    .slide__txt h1 {
+        margin-bottom: 20px;}
+        .slide__txt h3 {
+            margin-bottom: 32px; font-size: 20px !important;}
+            .insta__list li {width: calc(50% - 20px);}
+            .newslet__txt{margin-bottom: 30px;}
+        
+}
+
+@media (max-width: 800px) {}
+
+@media (max-width: 767.98px) {}
+
+
+@media (max-width: 575.99px) {
+    h2{font-size: 30px;}
+    h3{font-size: 24px;}
+    h4{font-size: 20px;}
+    .slide__txt{display: none}
+    
+    .newslet__content {
+        font-size: 18px;
+    }
+    .insta__list li, .category__content     .category__item {
+        width: 100%; margin: 0 0 20px 0;
+    }
+    
+}
+
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 800px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { ... }
