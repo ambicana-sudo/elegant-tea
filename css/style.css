@@ -1,16 +1,13 @@
-/* font-family: 'Open Sans', sans-serif;
-
-font-family: 'Poppins', sans-serif; */
 
 /* GLOBAL STYLES ===================================== */
-body { color: #000000; font-family: 'sofia_proregular'; font-size: 14px; font-weight: 400; line-height: 24px; overflow-x: hidden; }
+body { color: #000000; font-family: 'sofia_proregular'; font-size: 16px; font-weight: 400; line-height: 24px; overflow-x: hidden; }
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 { margin-top: 0;}
 h1, .h1 { font-size: 50px !important; margin-bottom: 20px; }
 h2, .h2 { font-size: 40px;}
 h3, .h3 { font-size: 30px; }
-h4, .h4 { font-size: 24px; }
-h5, .h5 { font-size: 20px; }
-h6, .h6 { font-size: 16px; }
+h4, .h4 { font-size: 26px; }
+h5, .h5 { font-size: 22px; }
+h6, .h6 { font-size: 18px; }
 a, a:hover, a:focus { outline: none !important;  text-decoration: none; color:#333;}
 a:hover{color: #000;}
 ul { margin: 0; padding-left: 0;}
@@ -21,6 +18,8 @@ img{width: 100%}
 .mar-b-60{margin-bottom: 60px;}
 .mar-b-30{margin-bottom: 30px;}
 .mar-b-10{margin-bottom: 10px;}
+.mar-b-20{margin-bottom: 20px;}
+.mar-t-30{margin-top: 30px;}
 .pad-b-0{padding-bottom:0 !important;}
 .pad-l-0{padding-left: 0;}
 
@@ -45,8 +44,8 @@ header{padding: 22px 0}
 .extra__link > li a{display: block; padding: 0 15px; font-size: 28px; line-height: 60px;}
 
 /* navigation */
+.navbar-toggler{background: #000; border-radius: 0;}
 .nav-link{font-weight: 500; font-size: 16px;}
-/* .nav-link:hover{color: #d5b754} */
 .navbar-expand-lg .navbar-nav .nav-link{ padding-right: 0; padding-left: 0; margin: 0 15px;}
 a.nav-link, .title{position: relative;}
 .nav-hover li > a:hover::before, 
@@ -116,9 +115,9 @@ a.nav-link, .title{position: relative;}
 
 /*category*/
 .category__content{font-size: 0; margin-left: -10px; margin-right: -10px; padding-top: 50px;}
-.category__content .category__item{width: calc(50% - 20px);; float: left;display: flex !important;justify-content: center; margin: 0 10px 20px 10px;}
+.category__content .category__item{width: calc(50% - 20px);; float: left;display: flex !important;justify-content: center; margin: 0 10px 10px 10px;}
 .category__img, .category__item{position: relative;}
-.category__img{overflow: hidden}
+.category__img{overflow: hidden; margin-bottom: 10px;}
 .overlay{position: absolute; left: 0; right: 0; background: rgba(0,0,0,0.3); height: 100%; z-index: 4;}
 .category .cat__title{position: absolute; top: 50%; left: 50%; z-index: 5; padding-bottom: 30px;width: auto; transform: translate(-50%, -50%);}
 .cat__title{position: relative; display: inline-block;}
@@ -129,6 +128,7 @@ a.nav-link, .title{position: relative;}
     justify-content: center; margin: 0 10px 20px 10px; overflow: hidden;}
 .product  .cat__title::before {background: #000;}
 .product .category__img{margin-bottom: 10px; height: 100%; max-height: 234px;}
+
 .pagetitle {
 	position: relative;
     text-align: center;
@@ -182,7 +182,7 @@ a.nav-link, .title{position: relative;}
 .footer{background: #000; color: #aaa}
 .footer h6{font-weight: 600;}
 .footer__newslet{margin-bottom: 30px}
-.footer__link a:hover{color: #d5b754}
+.footer a:hover{color: #d5b754}
 .footer .form-control{border-bottom: 1px solid #eeeeee;}
 .footer .icon{height: 35px; width: 35px; line-height: 35px; font-size: 18px; background: #a2a2a2; display: inline-block; color: #000; margin-right: 10px;}
 .footer .btn{padding: 5px 30px;}
@@ -214,4 +214,35 @@ a.nav-link, .title{position: relative;}
 .direct__form .btn{ padding: 6px 18px;}
 
 
-  
+/*pagination*/
+.pagination{justify-content: center; margin-top: 30px;}
+.page-item a{ padding: 5px;}
+.page-link:focus {
+    box-shadow: none;
+}
+
+.page-link {
+    color: #000;
+    background-color: #fff;
+    border: 0;
+    justify-content: center;
+}
+
+.page-link:hover {
+    color: #000;
+    background-color: transparent;
+    border-bottom-color: rgb(0, 0, 0);
+    border-bottom: 1px solid #000;
+}
+
+/* accordion */
+.btn-link{padding: 0 !important; color: #333; font-size: 18px;}
+.btn-link.focus, .btn-link:focus, .btn-link:hover{text-decoration: none}
+.card-header h2 span{font-size: 12px; display: inline-block; line-height: 25px;}
+.card{border: 0;}
+.card-header{background-color: transparent; padding: 10px 0}
+.card-header h2{line-height: 0;}
+.accordion > .card .card-header{margin-bottom: 0; border-color: #000;}
+.list__item a{padding: 3px 0; display: inline-block}
+
+.side__content{margin-bottom: 30px;}
