@@ -94,9 +94,9 @@ a.nav-link, .title{position: relative;}
 .tag{background: #000000; padding: 40px 0; text-align: center; margin-bottom: 60px}
 .tag a{text-decoration: underline}
 .section{padding: 60px 0;}
-.section__title{position: relative; text-align: center; background: #fff; padding: 0 10px;}
+/* .section__title{position: relative; text-align: center; background: #fff; padding: 0 10px;}
 .section__title::before{position: absolute; height: 1px; background: #000000; content: ""; left: 0; right: 0; top: 50%; margin: 0 122px;}
-.section__title span{background: #fff; display: inline-block; padding: 0 15px;}
+.section__title span{background: #fff; display: inline-block; padding: 0 15px;} */
 
 
 /* split section */
@@ -130,27 +130,13 @@ a.nav-link, .title{position: relative;}
 .product  .cat__title::before {background: #000;}
 .product .category__img{margin-bottom: 10px; height: 100%; max-height: 234px;}
 
-.pagetitle {
-	position: relative;
-    text-align: center;
-    margin: 0 89px 20px 89px;
-}
-.pagetitle::before {
-	background-color: #000000;
-	content: '';
-	height: 1px;
-	left: 0;
-	position: absolute;
-	top: 50%;
-	width: 100%;
-	z-index: 0;
-}
-.pagetitle span {
-	background-color: #ffffff;
-	padding-left: 20px;
-	padding-right: 20px;
-	position: relative;
-}
+.pagetitle {position: relative;text-align: center;margin: 0 89px 20px 89px;}
+.pagetitle::before {background-color: #000000;content: '';height: 1px;left: 0;position: absolute;top: 50%;width: 100%;z-index: 0;}
+.pagetitle span {background-color: #ffffff;padding-left: 20px;padding-right: 20px;position: relative;}
+
+.section__title{border-bottom: 1px solid#000; padding-bottom: 20px; margin-bottom: 20px;}
+.border-bot{border-bottom: 1px solid #ccc;}
+.breadcrumb{background: none; padding: 0 0 10px 0; font-size: 18px;}
 
 
 /* newsletter */
@@ -175,23 +161,24 @@ a.nav-link, .title{position: relative;}
 .insta__content{position: absolute; z-index: 5; bottom: -130px; opacity: 0; transition: all 0.5s ease;}
 .insta__list li:hover .insta__content{opacity: 1; bottom: 30px;}
 .insta__content .btn-default{border-color: #fff; color: #ffffff; padding: 8px 26px; border-width: 2px}
-.icon{background: #ffffff;height: 60px;width: 60px;border-radius: 50%;display: block; line-height: 60px;
+.insta__content .icon{background: #ffffff;height: 60px;width: 60px;border-radius: 50%;display: block; line-height: 60px;
     text-align: center;font-size: 35px;color: #aaa; margin-bottom: 20px; margin-left: auto; margin-right: auto}
-.icon:hover{color: #000;}
+.icon:hover{color: #fff;}
 
 /*footer */
 .footer{background: #000; color: #aaa}
 .footer h6{font-weight: 600;}
 .footer__newslet{margin-bottom: 30px}
-.footer a:hover{color: #d5b754}
+.footer .footer__link:hover{color: #d5b754}
 .footer .form-control{border-bottom: 1px solid #eeeeee;}
-.footer .icon{height: 35px; width: 35px; line-height: 35px; font-size: 18px; background: #a2a2a2; display: inline-block; color: #000; margin-right: 10px;}
+.icon{height: 35px; width: 35px; line-height: 35px; border-radius: 50%; text-align: center; font-size: 18px; background: #a2a2a2; display: inline-block; color: #000; margin-right: 10px;}
 .footer .btn{padding: 5px 30px;}
 
 /*scroller*/
 .scrollup {width: 40px;height: 40px;line-height: 40px;text-align: center;bottom: 55px;position: fixed;right: 20px;background: rgba(0,0,0,0.1);
     color: #fff;border-radius: 50%;cursor: pointer;font-size: 18px;}
 
+    
 /*search*/
 .extra__link{position: relative;}
 .search__tab {position: absolute;left: 70px;right: 0;margin-top: 15px;}
@@ -206,6 +193,7 @@ a.nav-link, .title{position: relative;}
 .open .search-icon {margin: 0;width: 60px;height: 60px;border-radius: 60px;}
 .input-group-btn{margin-left: 20px;}
 
+
 .register{padding-top: 50px; padding-bottom: 50px;}
 .register a{padding: 10px 15px; font-size: 22px; border: 1px solid #000; background: #fff;}
 .more{display: inline-block;}
@@ -218,23 +206,10 @@ a.nav-link, .title{position: relative;}
 /*pagination*/
 .pagination{justify-content: center; margin-top: 30px;}
 .page-item a{ padding: 5px;}
-.page-link:focus {
-    box-shadow: none;
-}
-
-.page-link {
-    color: #000;
-    background-color: #fff;
-    border: 0;
-    justify-content: center;
-}
-
-.page-link:hover {
-    color: #000;
-    background-color: transparent;
-    border-bottom-color: rgb(0, 0, 0);
-    border-bottom: 1px solid #000;
-}
+.page-link:focus {box-shadow: none;}
+.page-link {color: #000;background-color: #fff;border: 0;justify-content: center;}
+.page-link:hover {color: #000;background-color: transparent;border-bottom-color: rgb(0, 0, 0);
+    border-bottom: 1px solid #000;}
 
 /* accordion */
 .btn-link{padding: 0 !important; color: #333; font-size: 18px;}
@@ -252,18 +227,25 @@ a.nav-link, .title{position: relative;}
 /** image magnifier **/
 #gallery_01 img{border:2px solid white;}
 #gallery_01 .active img{border:2px solid #333 !important;}
-#zoom_03 {
-	width: 100% !important;
-	}
-#gallery_01 > a > img {
-	width: 25% !important;
-	width: calc(25% - 4px) !important;
-	}
+#zoom_03 {width: 100% !important;}
+#gallery_01 > a > img {width: 25% !important;width: calc(25% - 4px) !important;}
 	
-#gallery_01{
-    border: 1px solid #ddd;}
+#gallery_01{border: 1px solid #ddd;}
     
 /* directory listing */
 .photos__list li{position: relative}
-.photos__list li a.cancel{position: absolute; left: 5px; top: 5px; background: rgba(255,255,255,0.5);
+.photos__list li a.cancel{position: absolute; right: 5px; top: 5px; background: rgba(255,255,255,0.5);
      height: 20px; width: 20px; line-height: 20px; border-radius: 50%; text-align: center; font-size: 10px;}
+
+/* owl carouel */
+.owl-carousel01.owl-theme .owl-dots{position: absolute; right: 10px; bottom: 20px; transform: none; left:inherit;}
+
+/*contact detail*/
+.contact__detail p, .terms{position: relative; padding-left: 30px;}
+.contact__detail p i, .terms li:before{position: absolute;left: 0; line-height: 30px;}
+.image{text-align: center;}
+.image img{width: auto}
+.terms li::before{content: "\e60a";font-family: 'themify'; font-size: 10px}
+
+.login__form{width: 50%; margin: auto}
+.big__icon{font-size: 168px; color: #a2a2a2; display: block;}
