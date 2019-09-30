@@ -8,13 +8,10 @@
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/themify/themify-icons.css">
-	<link rel="stylesheet" href="fonts/sofia/sofia_font.css">
 	<link rel="stylesheet" href="assets/owlcarousel/owl.carousel.min.css">
 	<link rel="stylesheet" href="assets/owlcarousel/owl.theme.css">
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/responsive.css">
-
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="css/responsive.css"> 
 
 	<title>Elegant Tea</title>
 </head>
@@ -116,7 +113,7 @@
 			<div class="row">
 				<div class="col-md-6">
 					<div class="directory__form">
-						<h3 class="mar-b-30">New user?<br>Create an account today!</h3>
+						<h4 class="mar-b-30">New user?<br>Create an account today!</h4>
 						<form>
 							<div class="form-group">
 								<div class="form-check form-check-inline">
@@ -241,6 +238,7 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script src="assets/owlcarousel/owl.carousel.js"></script>
 	<script>
+		//owl carousel
 		$(document).ready(function() {
 			var owl = $('.owl-carousel');
 			owl.owlCarousel({
@@ -263,6 +261,7 @@
 			});
 		})
 
+		// scroll up
 		$('.scrollup').on('click', function(){
 			$('html,body').animate({scrollTop:0}, 500);
 			return false;
@@ -272,6 +271,7 @@
 				$('html,body').animate({scrollTop: $("#"+theID).offset().top},500);
 		}
 
+		//search
 		$(".search-button").click(function() {
 			var $this = $(this);
 			if ($this.parent().hasClass('open')) {
@@ -288,8 +288,6 @@
 			$this
 			.parent()
 			.toggleClass("open");
-
-				
 		});
 
 	</script>

@@ -115,7 +115,7 @@
 		<div class="container">
 			<div class="login">
 				<div class="login__form">
-					<h3 class="mar-b-30 text-center">Login to your account</h3>
+					<h4 class="mar-b-30 text-center">Login to your account</h4>
 					<form>
 						<div class="form-group">
 							<input type="name" class="form-control" id="inputName" placeholder="Username">
@@ -194,7 +194,7 @@
 						<a href="JavaScript:Void(0);" class="icon"><i class="ti-facebook"></i></a>
 						<a href="JavaScript:Void(0);" class="icon"><i class="ti-instagram"></i></a>
 					</div>
-					<p class="text-right"><small>The Elegant Tea Time Pvt Ltb | Website by <a href="JavaScript:Void(0);" class="flat__txt">The Marketing Co</a></small></p>
+					<p class="text-right"><small>Elegant Tea Time Pvt Ltb | Website by <a href="JavaScript:Void(0);" class="flat__txt">The Marketing Co</a></small></p>
 				</div>
 			</div>
 		</div>
@@ -208,6 +208,7 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script src="assets/owlcarousel/owl.carousel.js"></script>
 	<script>
+		//owl carousel
 		$(document).ready(function() {
 			var owl = $('.owl-carousel');
 			owl.owlCarousel({
@@ -230,6 +231,8 @@
 			});
 		})
 
+		//scroll up
+
 		$('.scrollup').on('click', function(){
 			$('html,body').animate({scrollTop:0}, 500);
 			return false;
@@ -238,6 +241,8 @@
 		function scrollToID(theID) {
 				$('html,body').animate({scrollTop: $("#"+theID).offset().top},500);
 		}
+
+		//search
 
 		$(".search-button").click(function() {
 			var $this = $(this);
@@ -254,9 +259,7 @@
 			}
 			$this
 			.parent()
-			.toggleClass("open");
-
-				
+			.toggleClass("open");	
 		});
 
 	</script>

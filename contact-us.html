@@ -8,7 +8,6 @@
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/themify/themify-icons.css">
-	<link rel="stylesheet" href="fonts/sofia/sofia_font.css">
 	<link rel="stylesheet" href="assets/owlcarousel/owl.carousel.min.css">
 	<link rel="stylesheet" href="assets/owlcarousel/owl.theme.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -111,6 +110,15 @@
 		</div>
 	</header>
 
+	<!--inside content banner-->
+	<div class="inside__banner">
+		<img src="images/64961760_2138169069628396_4911842792910618624_n@2x.png" alt="image">
+		<div class="banner__content flat__txt text-center">
+			<h1 class="banner__title">Talk to Us</h1>
+		</div>
+	</div>
+
+	<!--content-->
 	<div class="section content">
 		<div class="container">
 			<div class="contact__info">
@@ -118,7 +126,7 @@
 					<!--Enquiry form-->
 					<div class="col-md-6">
 						<div class="enquiry__form">
-							<h5 class="section__title text-uppercase">Got a question?<br>Talk to us!</h5>
+							<h4 class="section__title">Got a question?<br>Talk to us!</h4>
 							<form>
 								<div class="form-group">
 									<input type="text" class="form-control" aria-describedby="emailHelp" placeholder="Enter name">
@@ -232,7 +240,7 @@
 						<a href="JavaScript:Void(0);" class="icon"><i class="ti-facebook"></i></a>
 						<a href="JavaScript:Void(0);" class="icon"><i class="ti-instagram"></i></a>
 					</div>
-					<p class="text-right"><small>The Elegant Tea Time Pvt Ltb | Website by <a href="JavaScript:Void(0);" class="flat__txt">The Marketing Co</a></small></p>
+					<p class="text-right"><small>Elegant Tea Time Pvt Ltb | Website by <a href="JavaScript:Void(0);" class="flat__txt"></a></small></p>
 				</div>
 			</div>
 		</div>
@@ -246,6 +254,7 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script src="assets/owlcarousel/owl.carousel.js"></script>
 	<script>
+		//owl carousel
 		$(document).ready(function() {
 			var owl = $('.owl-carousel, .owl-carousel01');
 			owl.owlCarousel({
@@ -268,6 +277,7 @@
 			});
 		})
 
+		// scroll up
 		$('.scrollup').on('click', function(){
 			$('html,body').animate({scrollTop:0}, 500);
 			return false;
@@ -281,6 +291,25 @@
 		$(this)
 			.parent()
 			.toggleClass("open");
+		});
+		
+		//search
+		$(".search-button").click(function() {
+			var $this = $(this);
+			if ($this.parent().hasClass('open')) {
+
+				if ($this.parent().find('.search-box').val().length > 0) {
+
+					$this.find('.ti-search').toggleClass('ti-search').toggleClass('ti-check');
+					return;
+				}
+			}
+			if ($this.parent().find('.search-box').val().length < 1) {
+				$this.find('.ti-check').toggleClass('ti-check').toggleClass('ti-search');
+			}
+			$this
+			.parent()
+			.toggleClass("open");	
 		});
 
 	</script>
