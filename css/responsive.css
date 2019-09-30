@@ -23,8 +23,8 @@
     h2{font-size: 30px;}
     h3{font-size: 24px;}
     h4{font-size: 20px;}
-    .slide__txt{position: static}
-    .slide__txt h1, .slide__txt h3{display: none}
+    /* .slide__txt{position: static}
+    .slide__txt h1, .slide__txt h3{display: none} */
     .custom-select,.direct__form{background: #eee}
     .section__title::before {margin: 0;}
     .category__content{margin-left: 0; margin-right: 0;}

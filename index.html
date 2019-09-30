@@ -8,29 +8,28 @@
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/themify/themify-icons.css">
-	<link rel="stylesheet" href="fonts/sofia/sofia_font.css">
+	<!-- <link rel="stylesheet" href="fonts/sofia/sofia_font.css"> -->
 	<link rel="stylesheet" href="assets/owlcarousel/owl.carousel.min.css">
 	<link rel="stylesheet" href="assets/owlcarousel/owl.theme.css">
+	<link rel="stylesheet" href="assets/SlidePushMenus/component.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/responsive.css">
-
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet"> 
 
 	<title>Elegant Tea</title>
 </head>
 
-<body>
+<body class="cbp-spmenu-push">
 	<!--header-->
 	<header>
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-md-3 col-sm-8">
+				<div class="col-md-3">
 					<div class="logo">
 						<a href="#"><img src="images/logo.png" alt="LOGO"></a>
 					</div>
 				</div>
 
-				<div class="col-md-6 col-sm-4">
+				<div class="col-md-6 ">
 					<div class="navigation">
 						<nav class="navbar navbar-expand-lg">
 							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,13 +41,53 @@
 									<li class="nav-item active">
 										<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
 									</li>
-									<li class="nav-item dropdown">
-										<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<li class="nav-item dropdown megamenu">
+										<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown  megamenu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 											Hire
 										</a>
-										<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-											<a class="dropdown-item" href="#">Action</a>
-											<a class="dropdown-item" href="#">Another action</a>
+										<div class="dropdown-menu flat__txt" aria-labelledby="navbarDropdown megamenu">
+											<div class="rounded-0 m-0 shadow-sm">
+												<div class="p-4">
+													<div class="row">
+													<div class="col-lg-4 mb-4">
+														<h6 class="font-weight-bold text-uppercase">MegaMenu heading</h6>
+														<ul class="list-unstyled">
+														<li class="nav-item"><a href="" class="nav-link text-small pb-0">Unique Features</a></li>
+														<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Image Responsive</a></li>
+														<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Auto Carousel</a></li>
+														<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Newsletter Form</a></li>
+														</ul>
+													</div>
+													<div class="col-lg-4 mb-4">
+														<h6 class="font-weight-bold text-uppercase">MegaMenu heading</h6>
+														<ul class="list-unstyled">
+														<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Unique Features</a></li>
+														<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Image Responsive</a></li>
+														<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Auto Carousel</a></li>
+														<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Newsletter Form</a></li>
+														</ul>
+													</div>
+													<div class="col-lg-4 mb-4">
+														<h6 class="font-weight-bold text-uppercase">MegaMenu heading</h6>
+														<ul class="list-unstyled">
+														<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Unique Features</a></li>
+														<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Image Responsive</a></li>
+														<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Auto Carousel</a></li>
+														<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Newsletter Form</a></li>
+														</ul>
+													</div>
+													<div class="col-lg-4 mb-4">
+														<h6 class="font-weight-bold text-uppercase">MegaMenu heading</h6>
+														<ul class="list-unstyled">
+														<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Unique Features</a></li>
+														<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Image Responsive</a></li>
+														<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Auto Carousel</a></li>
+														<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Newsletter Form</a></li>
+														</ul>
+													</div>
+													</div>
+												</div>
+											</div>
 										</div>
 									</li>
 									<li class="nav-item">
@@ -101,8 +140,106 @@
 									</span>
 								</div>
 							</li>
-							<li><a href="#"><i class="ti-user"></i></a></li>
-							<li><a href="#"><i class="ti-heart"></i></a></li>
+
+							<li>
+								<a href="#"  id="showLeftPush"><i class="ti-user"></i></a>
+								<div class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left flat__txt" id="cbp-spmenu-s1">
+									<p class="cancel float-right" id="cancel"><i class="ti-close"></i></p>
+									<h4>My Quote List</h4>
+									<div class="order__list table-responsive flat__txt">
+										<table class="table">
+											<thead>
+												<tr>
+												<th scope="col">Product</th>
+												<th scope="col">Price</th>
+												<th scope="col">Qty</th>
+												<th scope="col"></th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td width="60%">
+														<h6 class="mt-0">Media heading</h6>
+														Cras sit amet nibh libero, in gravida nulla.Cras sit amet nibh libero, in gravida nulla.	
+													</td>
+			
+													<td>$00.00</td>
+
+													<td>
+														<a href="#" class="cancel"><i class="ti-plus"></i></a> $00.00 <a href="#" class="cancel"><i class="ti-minus"></i></a>
+													</td>
+
+													<td><a href="#" class="cancel"><i class="ti-close"></i></a></td>
+												</tr>
+												<tr>
+													<td width="60%">
+														<h6 class="mt-0">Media heading</h6>
+														Cras sit amet nibh libero, in gravida nulla.
+													</td>
+													
+													<td>$00.00</td>
+													<td>
+														<a href="#" class="cancel"><i class="ti-plus"></i></a> $00.00 <a href="#"" class="cancel"><i class="ti-minus"></i></a>
+													</td>
+
+													<td><a href="#" class="cancel"><i class="ti-close"></i></a></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<p class="text-center">Sub Total<br>$00.00</p>
+								</div>
+							</li>
+							<li>
+								<a href="#" id="showLeftPush"><i class="ti-heart"></i></a>
+								<div class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left flat__txt" id="cbp-spmenu-s1">
+									<p class="cancel float-right" id="cancel"><i class="ti-close"></i></p>
+									<h4>My Quote List</h4>
+									<div class="order__list table-responsive flat__txt">
+										<table class="table">
+											<thead>
+												<tr>
+												<th scope="col">Product</th>
+												<th scope="col">Price</th>
+												<th scope="col">Qty</th>
+												<th scope="col"></th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td width="60%">
+														<h6 class="mt-0">Media heading</h6>
+														Cras sit amet nibh libero, in gravida nulla.Cras sit amet nibh libero, in gravida nulla.	
+													</td>
+			
+													<td>$00.00</td>
+
+													<td>
+														<a href="#" class="cancel"><i class="ti-plus"></i></a> $00.00 <a href="#" class="cancel"><i class="ti-minus"></i></a>
+													</td>
+
+													<td><a href="#" class="cancel"><i class="ti-close"></i></a></td>
+												</tr>
+												<tr>
+													<td width="60%">
+														<h6 class="mt-0">Media heading</h6>
+														Cras sit amet nibh libero, in gravida nulla.
+													</td>
+													
+													<td>$00.00</td>
+													<td>
+														<a href="#" class="cancel"><i class="ti-plus"></i></a> $00.00 <a href="#"" class="cancel"><i class="ti-minus"></i></a>
+													</td>
+
+													<td><a href="#" class="cancel"><i class="ti-close"></i></a></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<p class="text-center">Sub Total<br>$00.00</p>
+								</div>
+							</li>
+
 							<li><a href="#"><i class="ti-shopping-cart"></i></a></li>
 						</ul>
 					</div>
@@ -124,196 +261,192 @@
 
 		<div class="slide__txt flat__txt">
 			<h1>Get Inspired</h1>
-			<h3>Lorem Ipsum has been the industry's standard dummy text ever</h3>
+			<p>Lorem Ipsum has been the industry's standard dummy text ever</p>
 			<a href="#" class="btn btn-round text-uppercase white">Browse</a>
 		</div>
 	</div>
 
 	<div class="tag">
 		<div class="container">
-			<h4 class="flat__txt mar-b-0">Are you an Event Planne or Event Stylist? Get 15% off all our hire items! <a href="#">Register now</a></h4>
+			<p class="flat__txt mar-b-0">Are you an Event Planne or Event Stylist? Get 15% off all our hire items! <a href="#">Register now</a></p>
 		</div>
 	</div>
 
-	<div class="quote text-center">
+	<div class="content">
 		<div class="container">
-			<h3 class="mar-b-30">Make your special event unforgottable</h3>
-			<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-		</div>
-	</div>
+			<div class="quote text-center">
+				<h3 class="mar-b-30">Make your special event unforgottable</h3>
+				<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+			</div>
 
-	<!--category banner-->
-	<div class="category">
-		<div class="container">
-			<div class="category__content clearfix">
+			<!--category banner-->
+			<div class="category">
+				<div class="category__content clearfix">
+					<div class="category__item">
+						<div class="category__img">
+							<div class="overlay"></div>
+							<a href="JavaScript:Void(0);"><img src="images/64998056_2130625780383713_370098328328732672_n@2x.png" alt="image"></a>
+						</div>
+						<h2 class="cat__title flat__txt">
+							<a href="JavaScript:Void(0);">Hire</a>
+						</h2>
+					</div>
+
+					<div class="category__item">
+						<div class="category__img">
+							<div class="overlay"></div>
+							<a href="JavaScript:Void(0);"><img src="images/67898717_2642745545744817_7627242577538824827_n@2x.png" alt="image"></a>
+						</div>
+						<h2 class="cat__title flat__txt">
+							<a href="JavaScript:Void(0);">Inspiration</a>
+						</h2>
+					</div>
+				</div>
+			</div>
+
+			<div class="category">
 				<div class="category__item">
 					<div class="category__img">
 						<div class="overlay"></div>
-						<a href="JavaScript:Void(0);"><img src="images/64998056_2130625780383713_370098328328732672_n@2x.png" alt="image"></a>
+						<a href="JavaScript:Void(0);"><img src="images/67192703_2933361273402679_4046908395972100670_n@2x.png" alt="image"></a>
 					</div>
 					<h2 class="cat__title flat__txt">
-						<a href="JavaScript:Void(0);">Hire</a>
-					</h2>
-				</div>
-
-				<div class="category__item">
-					<div class="category__img">
-						<div class="overlay"></div>
-						<a href="JavaScript:Void(0);"><img src="images/67898717_2642745545744817_7627242577538824827_n@2x.png" alt="image"></a>
-					</div>
-					<h2 class="cat__title flat__txt">
-						<a href="JavaScript:Void(0);">Inspiration</a>
+						<a href="JavaScript:Void(0);">Directory</a>
 					</h2>
 				</div>
 			</div>
-		</div>
-	</div>
 
-	<div class="category">
-		<div class="container">
-			<div class="category__item">
-				<div class="category__img">
-					<div class="overlay"></div>
-					<a href="JavaScript:Void(0);"><img src="images/67192703_2933361273402679_4046908395972100670_n@2x.png" alt="image"></a>
+			<!--Product category-->
+			<div class="section product text-center">
+				<h3 class="pagetitle"><span>Category</span></h3>
+				<ul class="product__list clearfix pad-l-0">
+					<li>
+						<div class="category__item">
+							<div class="category__img">
+								<a href="JavaScript:Void(0);"><img src="images/9E53D0BA-D962-4D69-B684-1867337A8F94@2x.png" alt="image"></a>
+							</div>
+							<h5 class="cat__title text-center">
+								<a href="JavaScript:Void(0);">Animals</a>
+							</h5>
+						</div>
+					</li>
+
+					<li>
+						<div class="category__item">
+							<div class="category__img">
+								<a href="JavaScript:Void(0);"><img src="images/47580960_209400703318654_3715756239913746432_n@2x.png" alt="image"></a>
+							</div>
+							<h5 class="cat__title text-center">
+								<a href="JavaScript:Void(0);">Arches/Flower Stands</a>
+							</h5>
+						</div>
+					</li>
+
+					<li>
+						<div class="category__item">
+							<div class="category__img">
+								<a href="JavaScript:Void(0);"><img src="images/46451801_325200811635172_8420609762667790336_n@2x.png" alt="image"></a>
+							</div>
+							<h5 class="cat__title text-center">
+								<a href="JavaScript:Void(0);">Backdrop Walls</a>
+							</h5>
+						</div>
+					</li>
+
+					<li>
+						<div class="category__item">
+							<div class="category__img">
+								<a href="JavaScript:Void(0);"><img src="images/DCA88B19-FD3F-41CD-A856-4F6CD9BDAADA@2x.png" alt="image"></a>
+							</div>
+							<h5 class="cat__title text-center">
+								<a href="JavaScript:Void(0);">Bridal Collection</a>
+							</h5>
+						</div>
+					</li>
+
+					<li>
+						<div class="category__item">
+							<div class="category__img">
+								<a href="JavaScript:Void(0);"><img src="images/28554640_1629970893760821_1432859025_o@2x.png" alt="image"></a>
+							</div>
+							<h5 class="cat__title text-center">
+								<a href="JavaScript:Void(0);">Cake Stands</a>
+							</h5>
+						</div>
+					</li>
+
+					<li>
+						<div class="category__item">
+							<div class="category__img">
+								<a href="JavaScript:Void(0);"><img src="images/cake-stand-35cm@2x.png" alt="image"></a>
+							</div>
+							<h5 class="cat__title text-center">
+								<a href="JavaScript:Void(0);">Cake Tables</a>
+							</h5>
+						</div>
+					</li>
+
+					<li>
+						<div class="category__item">
+							<div class="category__img">
+								<a href="JavaScript:Void(0);"><img src="images/AF651573-5E0A-43DB-B7C3-CCF6B365C2A2-e1513078806927@2x.png" alt="image"></a>
+							</div>
+							<h5 class="cat__title text-center">
+								<a href="JavaScript:Void(0);">Candy and Market Carts</a>
+							</h5>
+						</div>
+					</li>
+
+					<li>
+						<div class="category__item">
+							<div class="category__img">
+								<a href="JavaScript:Void(0);"><img src="images/44157367_175265196717542_7323829296005382144_n@2x.png" alt="image"></a>
+							</div>
+							<h5 class="cat__title text-center">
+								<a href="JavaScript:Void(0);">Carnival & Circus Theme</a>
+							</h5>
+						</div>
+					</li>
+				</ul>
+				<div class="more">
+					<a href="#" class="text-uppercase">load more catagories</a>
+					<a href="#"><i class="ti-angle-down"></i></a>
 				</div>
-				<h2 class="cat__title flat__txt">
-					<a href="JavaScript:Void(0);">Directory</a>
-				</h2>
 			</div>
-		</div>
-	</div>
 
-	<!--Product category-->
-	<div class="section product text-center">
-		<div class="container">
-			<h4 class="pagetitle"><span>Category</span></h4>
-			<ul class="product__list clearfix pad-l-0">
-				<li>
-					<div class="category__item">
-						<div class="category__img">
-							<a href="JavaScript:Void(0);"><img src="images/9E53D0BA-D962-4D69-B684-1867337A8F94@2x.png" alt="image"></a>
-						</div>
-						<h6 class="cat__title text-center">
-							<a href="JavaScript:Void(0);">Animals</a>
-						</h6>
-					</div>
-				</li>
-
-				<li>
-					<div class="category__item">
-						<div class="category__img">
-							<a href="JavaScript:Void(0);"><img src="images/47580960_209400703318654_3715756239913746432_n@2x.png" alt="image"></a>
-						</div>
-						<h6 class="cat__title text-center">
-							<a href="JavaScript:Void(0);">Arches/Flower Stands</a>
-						</h6>
-					</div>
-				</li>
-
-				<li>
-					<div class="category__item">
-						<div class="category__img">
-							<a href="JavaScript:Void(0);"><img src="images/46451801_325200811635172_8420609762667790336_n@2x.png" alt="image"></a>
-						</div>
-						<h6 class="cat__title text-center">
-							<a href="JavaScript:Void(0);">Backdrop Walls</a>
-						</h6>
-					</div>
-				</li>
-
-				<li>
-					<div class="category__item">
-						<div class="category__img">
-							<a href="JavaScript:Void(0);"><img src="images/DCA88B19-FD3F-41CD-A856-4F6CD9BDAADA@2x.png" alt="image"></a>
-						</div>
-						<h6 class="cat__title text-center">
-							<a href="JavaScript:Void(0);">Bridal Collection</a>
-						</h6>
-					</div>
-				</li>
-
-				<li>
-					<div class="category__item">
-						<div class="category__img">
-							<a href="JavaScript:Void(0);"><img src="images/28554640_1629970893760821_1432859025_o@2x.png" alt="image"></a>
-						</div>
-						<h6 class="cat__title text-center">
-							<a href="JavaScript:Void(0);">Cake Stands</a>
-						</h6>
-					</div>
-				</li>
-
-				<li>
-					<div class="category__item">
-						<div class="category__img">
-							<a href="JavaScript:Void(0);"><img src="images/cake-stand-35cm@2x.png" alt="image"></a>
-						</div>
-						<h6 class="cat__title text-center">
-							<a href="JavaScript:Void(0);">Cake Tables</a>
-						</h6>
-					</div>
-				</li>
-
-				<li>
-					<div class="category__item">
-						<div class="category__img">
-							<a href="JavaScript:Void(0);"><img src="images/AF651573-5E0A-43DB-B7C3-CCF6B365C2A2-e1513078806927@2x.png" alt="image"></a>
-						</div>
-						<h6 class="cat__title text-center">
-							<a href="JavaScript:Void(0);">Candy and Market Carts</a>
-						</h6>
-					</div>
-				</li>
-
-				<li>
-					<div class="category__item">
-						<div class="category__img">
-							<a href="JavaScript:Void(0);"><img src="images/44157367_175265196717542_7323829296005382144_n@2x.png" alt="image"></a>
-						</div>
-						<h6 class="cat__title text-center">
-							<a href="JavaScript:Void(0);">Carnival & Circus Theme</a>
-						</h6>
-					</div>
-				</li>
-			</ul>
-			<div class="more">
-				<a href="#" class="text-uppercase">load more catagories</a>
-				<a href="#"><i class="ti-angle-down"></i></a>
-			</div>
-		</div>
-	</div>
-
-	<!-- blog-->
-	<div class="blog mar-b-60">
-		<div class="container">
-			<div class="blog__wrap">
-				<h4 class="pagetitle"><span>Blog</span></h4>
-				<div class="row">
-					<div class="col-md-6">
-						<div class="blog__list">
-							<div class="blog__img mar-b-10">
-								<a href="#"><img src="images/RHP_211018_Q57233_DEE_HR-029-1040x670@2x.png" alt="image"></a>
+			<!-- blog-->
+			<div class="blog">
+				<div class="blog__wrap">
+					<h3 class="pagetitle"><span>Blog</span></h3>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="blog__list">
+								<div class="blog__img mar-b-10">
+									<a href="#"><img src="images/RHP_211018_Q57233_DEE_HR-029-1040x670@2x.png" alt="image"></a>
+								</div>
+								<div class="blog__txt">
+									<h6>Lorem Ipsum</h6>
+									<p>Lorem Ipsum has been the industry's standard dummy text ever since the</p>
+									<button type="submit" class="btn btn-default btn-block text-uppercase black">Read More</button>
+								</div>
 							</div>
-							<div class="blog__txt">
-								<h5>Lorem Ipsum</h5>
-								<p>Lorem Ipsum has been the industry's standard dummy text ever since the</p>
-								<button type="submit" class="btn btn-default btn-block text-uppercase black">Read More</button>
+						</div>
+
+						<div class="col-md-6">
+							<div class="blog__list">
+								<div class="blog__img mar-b-10">
+									<a href="#"><img src="images/RHP_211018_Q57233_DEE_HR-029-1040x670@2x.png" alt="image"></a>
+								</div>
+								<div class="blog__txt">
+									<h6>Lorem Ipsum</h6>
+									<p>Lorem Ipsum has been the industry's standard dummy text ever since the</p>
+									<button type="submit" class="btn btn-default btn-block text-uppercase black">Read More</button>
+								</div>
 							</div>
 						</div>
 					</div>
 
-					<div class="col-md-6">
-						<div class="blog__list">
-							<div class="blog__img mar-b-10">
-								<a href="#"><img src="images/RHP_211018_Q57233_DEE_HR-029-1040x670@2x.png" alt="image"></a>
-							</div>
-							<div class="blog__txt">
-								<h5>Lorem Ipsum</h5>
-								<p>Lorem Ipsum has been the industry's standard dummy text ever since the</p>
-								<button type="submit" class="btn btn-default btn-block text-uppercase black">Read More</button>
-							</div>
-						</div>
-					</div>
+					<a href="#" class="more text-center text-uppercase mar-t-30"><u>View all Post</u></a>
 				</div>
 			</div>
 		</div>
@@ -355,7 +488,7 @@
 	<!--Instagram-->
 	<div class="section">
 		<div class="insta">
-				<h4 class="pagetitle"><span>Instagram</span></h4>
+			<h3 class="pagetitle"><span>Instagram</span></h3>
 			<ul class="insta__list clearfix pad-l-0">
 				<li>
 					<div class="insta__img">
@@ -536,6 +669,8 @@
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="assets/owlcarousel/owl.carousel.js"></script>
+	<script src="assets/SlidePushMenus/modernizr.custom.js"></script>
+	<script src="assets/SlidePushMenus/classie.js"></script>
 	<script>
 		$(document).ready(function() {
 			var owl = $('.owl-carousel');
@@ -583,10 +718,36 @@
 			}
 			$this
 			.parent()
-			.toggleClass("open");
-
-				
+			.toggleClass("open");	
 		});
+
+		var menuLeft = document.getElementById( 'cbp-spmenu-s1' )
+				showLeftPush = document.getElementById( 'showLeftPush' ),
+				cancel = document.getElementById('cancel'),
+				body = document.body;
+				
+
+			
+			showLeftPush.onclick = function() {
+				classie.toggle( this, 'active' );
+				classie.toggle( body, 'cbp-spmenu-push-toright' );
+				classie.toggle( menuLeft, 'cbp-spmenu-open' );
+				disableOther( 'showLeftPush' );
+			};
+
+			function disableOther( button ) {
+				
+				if( button !== 'showLeftPush' ) {
+					classie.toggle( showLeftPush, 'disabled' );
+				}
+			};
+
+			cancel.onclick = function() {
+				classie.toggle( this, 'active' );
+				classie.toggle( body, 'cbp-spmenu-push-toright' );
+				classie.toggle( menuLeft, 'cbp-spmenu-open' );
+				disableOther( 'showLeftPush' );
+			}
 
 	</script>
 
