@@ -114,8 +114,9 @@ a.nav-link, .title{position: relative;}
 
 /* counter */
 .number{font-size: 40px; font-weight:600}
-.counter__list{border-bottom: 1px solid #000;padding-bottom: 60px;}
+.counter__list{border-bottom: 1px solid #000;padding-bottom: 24px;}
 .counter__item{text-align: center}
+.image img{width: auto}
 
 /*category*/
 .category__content{font-size: 0; margin-left: -10px; margin-right: -10px; padding-top: 50px;}
@@ -206,12 +207,15 @@ a.nav-link, .title{position: relative;}
 .more{display: block;}
 .more a{display: block;font-size: 16px; transition: all 0.5s ease}
 .more:hover .arrow{transform: translateY(20%)}
-.direct__form{background: #ffffff; border-radius: 30px;}
-.direct__form .btn{ padding: 6px 18px;}
+
 
 
 /*pagination*/
 .pagination{justify-content: center; margin-top: 30px;}
+.blog .pagination{position: relative;}
+.page-prev, .page-next{position: absolute; bottom:0}
+.page-prev{left: 0}
+.page-next{right: 0}
 .page-item a{ padding: 5px;}
 .page-link:focus {box-shadow: none;}
 .page-link {color: #000;background-color: #fff;border: 0;justify-content: center;}
@@ -295,4 +299,6 @@ td .cancel{background: #000; color: #fff; font-size: 10px;}
   .cbp-spmenu .table{color: #fff}
 
   .box{border: 1px solid #aaa; padding: 20px}
+
+  
   
