@@ -17,6 +17,76 @@
 </head>
 
 <body>
+	<div class="offcanvas-wrap">
+	<aside class="cartdrawer">
+		<span class="hide float-right" style="display: inline-block; height:30px; width: 30px;"><i class="ti-close"></i></span>
+		<h4 class="sidetitle mar0b-20">My Quote List</h4>
+
+		<div class="quotelist__detail">
+			<div class="order__list table-responsive">
+				<table class="table flat__txt">
+					<thead>
+						<tr>
+						<th scope="col">Category</th>
+						<th scope="col">Price</th>
+						<th scope="col">Qty</th>
+						<th scope="col"></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td width="60%"><div class="media-body">
+								<h6 class="mt-0">Media heading</h6>
+								Cras sit amet nibh libero, in gravida nulla.Cras sit amet 
+							</td>
+
+							<td>$00.00</td>
+							<td>
+								<a href="#"><i class="ti-plus"></i></a> $00.00 <a href="#"><i class="ti-minus"></i></a>
+							</td>
+							<td>
+								<a href="#" class="cancel"><i class="ti-close"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td width="60%">
+								<h6 class="mt-0">Media heading</h6>
+								Cras sit amet nibh libero, in gravida nulla.
+							</td>
+							
+							<td>$00.00</td>
+							<td>
+								<a href="#"><i class="ti-plus"></i></a> $00.00 <a href="#"><i class="ti-minus"></i></a>
+							</td>
+							<td>
+								<a href="#" class="cancel"><i class="ti-close"></i></a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<p class="border-bot">Duration 1- 3 Days Hire</p>
+			
+			<div class="text-center">
+				<p>sub Total: $xx.xx</p>
+				<p class="border-bot">Please note, all pricing is</p>
+			</div>
+			
+			<button type="submit" class="btn btn-default btn-block text-uppercase mar-t-20 mar-b-20">Submit Quote</button>
+			<a href="#" style="display: block" class="flat__txt mar-b-10"><u>View the fine print</u></a>
+
+			<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting</p>
+		</div>
+	</aside>
+	<!-- //cartdrawer -->
+
+	<aside class="menudrawer">
+		<span class="hide">x</span>
+		Hello World! I am Menu drawer
+	</aside>
+	<!-- //menudrawer -->
+
 	<!--header-->
 	<header>
 		<div class="container-fluid">
@@ -100,7 +170,7 @@
 							</li>
 							<li><a href="#"><i class="ti-user"></i></a></li>
 							<li><a href="#"><i class="ti-heart"></i></a></li>
-							<li><a href="#"><i class="ti-shopping-cart"></i></a></li>
+							<li><a href="#" id="cartdrawer"><i class="ti-shopping-cart"></i></a></li>
 						</ul>
 					</div>
 				</div>
@@ -174,8 +244,8 @@
 
 							<form>
 								<div class="form-row align-items-center">
-									<div class="col-4 col-sm-4 my-1">
-										<input type="text" class="form-control mr-sm-2" id="inlineFormInputName2" placeholder="Qty">
+									<div class="col-sm-4 my-1">
+										<input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Qty">
 									</div>
 
 									<div class="col-auto my-1">
@@ -204,7 +274,7 @@
 							</div>
 							
 							<a href="#" class="text-uppercase float-right"><u>Continue Shopping</u></a>
-							<a href="#" class="text-uppercase"><u>View Quote List</u></a>
+							<a href="#" class="text-uppercase" id="cartdrawer"><u>View Quote List</u></a>
 						</div>
 					</div>
 				</div>
@@ -357,6 +427,7 @@
 			</div>
 		</div>
 	</footer>
+	</div>
 
 	<a href="#" class="scrollup"><i class="ti-arrow-up"></i></a>
 
@@ -367,6 +438,31 @@
 	<script src="assets/owlcarousel/owl.carousel.js"></script>
 	<script src="js/slide-thumbnail.js"></script>
 	<script>
+		//cart drawer
+		$(document).ready(function() {
+			$("#cartdrawer").on("click", function(e) {
+				$(".offcanvas-wrap").toggleClass("cartdrawer-active");
+				e.stopPropagation()
+			});
+			$(document).on("click", function(e) {
+				if ($(e.target).is(".cartdrawer, .cartdrawer * ") === false || $(e.target).is(".cartdrawer .hide") === true) {
+					$(".offcanvas-wrap").removeClass("cartdrawer-active");
+				}
+			});
+		});
+
+		//menu drawer
+		$(document).ready(function() {
+			$("#menudrawer").on("click", function(e) {
+				$(".offcanvas-wrap").toggleClass("menudrawer-active");
+				e.stopPropagation()
+			});
+			$(document).on("click", function(e) {
+				if ($(e.target).is(".menudrawer, .menudrawer * ") === false || $(e.target).is(".menudrawer .hide") === true) {
+					$(".offcanvas-wrap").removeClass("menudrawer-active");
+				}
+			});
+		});
 
 		$('.scrollup').on('click', function(){
 			$('html,body').animate({scrollTop:0}, 500);
@@ -374,7 +470,7 @@
 		});
 
 		function scrollToID(theID) {
-				$('html,body').animate({scrollTop: $("#"+theID).offset().top},500);
+			$('html,body').animate({scrollTop: $("#"+theID).offset().top},500);
 		}
 
 		$(".search-button").click(function() {

@@ -78,6 +78,7 @@ a.nav-link, .title{position: relative;}
     border-top: 0;border-right: 0; border-bottom: 0; border-left: 0; font-family: 'themify'; font-size: 10px;
 }
 
+
 /* slider*/
 .owl-carousel .item{position: relative;}
 .slider .owl-nav{ color: #fff;}
@@ -114,9 +115,8 @@ a.nav-link, .title{position: relative;}
 
 /* counter */
 .number{font-size: 40px; font-weight:600}
-.counter__list{border-bottom: 1px solid #000;padding-bottom: 24px;}
+.counter__list{border-bottom: 1px solid #000;padding-bottom: 60px;}
 .counter__item{text-align: center}
-.image img{width: auto}
 
 /*category*/
 .category__content{font-size: 0; margin-left: -10px; margin-right: -10px; padding-top: 50px;}
@@ -174,7 +174,7 @@ a.nav-link, .title{position: relative;}
 .footer{background: #000; color: #aaa}
 .footer h6{font-weight: 600;}
 .footer__newslet{margin-bottom: 30px}
-.footer .footer__link a:hover{color: #d5b754}
+.footer .footer__link a:hover, .list-unstyled .nav-item:hover a{color: #d5b754}
 .footer .form-control{border-bottom: 1px solid #eeeeee;}
 .icon{height: 35px; width: 35px; line-height: 35px; border-radius: 50%; text-align: center; background: #a2a2a2; display: inline-block; color: #000;}
 .footer .btn{padding: 5px 30px;}
@@ -207,15 +207,12 @@ a.nav-link, .title{position: relative;}
 .more{display: block;}
 .more a{display: block;font-size: 16px; transition: all 0.5s ease}
 .more:hover .arrow{transform: translateY(20%)}
-
+.direct__form{background: #ffffff; border-radius: 30px;}
+.direct__form .btn{ padding: 6px 18px;}
 
 
 /*pagination*/
 .pagination{justify-content: center; margin-top: 30px;}
-.blog .pagination{position: relative;}
-.page-prev, .page-next{position: absolute; bottom:0}
-.page-prev{left: 0}
-.page-next{right: 0}
 .page-item a{ padding: 5px;}
 .page-link:focus {box-shadow: none;}
 .page-link {color: #000;background-color: #fff;border: 0;justify-content: center;}
@@ -301,4 +298,65 @@ td .cancel{background: #000; color: #fff; font-size: 10px;}
   .box{border: 1px solid #aaa; padding: 20px}
 
   
+
+/* drawers */
+.offcanvas-wrap {
+  transition: all 0.3s ease;
+}
+.offcanvas-wrap.cartdrawer-active {
+  margin-right: 22rem;
+}
+
+.cartdrawer-active .navigation{display: none}
+
+.offcanvas-wrap.menudrawer-active {
+  margin-left: 22rem;
   
+}
+.menudrawer,
+.cartdrawer {
+  background-color: #ecebec;
+  bottom: 0;
+  position: fixed;
+  top: 0;
+  transition: all 0.3s ease;
+  width: 22rem;
+  z-index: 999;
+  background: #000000;
+  color: #fff;
+  padding: 40px 20px;
+  font-size: 14px
+}
+.menudrawer {
+  left: -22rem;
+}
+.cartdrawer {
+  right: -22rem;
+}
+.cartdrawer-active .cartdrawer {
+  right: 0; overflow-y: scroll
+}
+.menudrawer-active .menudrawer {
+  left: 0;
+}
+
+.cartdrawer .btn-default{background: #ffffff}
+
+/* fix for megamenu */
+header .container-fluid {
+  position: relative;
+}
+header div[class*="col-"],
+header .navbar {
+  position: inherit;
+}
+
+/* drawers responsive */
+@media screen and (max-width: 767.98px) { 
+  .offcanvas-wrap.cartdrawer-active {
+    margin-right: 0;
+  }
+  .offcanvas-wrap.menudrawer-active {
+    margin-left: 0;
+  }
+}
