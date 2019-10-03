@@ -437,7 +437,7 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script src="assets/owlcarousel/owl.carousel.js"></script>
 	<script src="js/slide-thumbnail.js"></script>
-	<script>
+	<script type="text/javascript">
 		//cart drawer
 		$(document).ready(function() {
 			$("#cartdrawer").on("click", function(e) {
@@ -464,6 +464,7 @@
 			});
 		});
 
+		//scroll up
 		$('.scrollup').on('click', function(){
 			$('html,body').animate({scrollTop:0}, 500);
 			return false;
@@ -471,12 +472,33 @@
 
 		function scrollToID(theID) {
 			$('html,body').animate({scrollTop: $("#"+theID).offset().top},500);
-		}
+		};
 
+		//search
 		$(".search-button").click(function() {
-		$(this)
+			var $this = $(this);
+			if ($this.parent().hasClass('open')) {
+
+				if ($this.parent().find('.search-box').val().length > 0) {
+
+					$this.find('.ti-search').toggleClass('ti-search').toggleClass('ti-check');
+					return;
+				}
+			}
+			if ($this.parent().find('.search-box').val().length < 1) {
+				$this.find('.ti-check').toggleClass('ti-check').toggleClass('ti-search');
+			}
+			$this
 			.parent()
-			.toggleClass("open");
+			.toggleClass("open");	
+		});
+
+		//fancy box (gallery popup)
+		$('[data-fancybox="images"]').fancybox({
+			thumbs : {
+				autoStart : true,
+				axis      : 'x'
+			}
 		});
 
 		$('.collapse').on('shown.bs.collapse', function(){
@@ -484,7 +506,6 @@
 			}).on('hidden.bs.collapse', function(){
 			$(this).parent().find(".ti-minus").removeClass("ti-minus").addClass("ti-plus");
 		});
-
 	</script>
 
 </body>

@@ -112,8 +112,8 @@
 	<div class="inside__banner">
 		<img src="images/64961760_2138169069628396_4911842792910618624_n@2x.png" alt="image">
 		<div class="banner__content flat__txt text-center">
-			<h1 class="d-none d-sm-block">Get Inspired</h1>
-			<p class="d-none d-sm-block"">Lorem Ipsum has been the industry's standard dummy text ever</p>
+			<h1>Get Inspired</h1>
+			<p>Lorem Ipsum has been the industry's standard dummy text ever</p>
 		</div>
 	</div>
 
@@ -131,6 +131,7 @@
 				<p> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker</p>
 			</div>
 
+
 			<!--slider-->
 			<div class="slider mar-b-20">
 				<div class="owl-carousel owl-carousel01 owl-theme">
@@ -143,53 +144,12 @@
 				</div>
 			</div>
 
-			<div class="article text-center border-bot mar-b-60">
+			<div class="article text-center border-bot">
 				<p class="text-uppercase">Share This Article</p>
 				<div class="social__media">
 					<a href="#"><i class="ti-facebook"></i></a>
 					<a href="#"><i class="ti-twitter"></i></a>
 					<a href="#"><i class="ti-email"></i></a>
-				</div>
-			</div>
-
-			<!--articles-->
-			<div class="blog">
-				<nav aria-label="Page navigation example">
-					<ul class="pagination mar-b-10">
-						<li class="page-item page-prev">
-							<a class="page-link" href="#" tabindex="-1"><i class="ti-angle-double-left"></i> Previous Article</a>
-						</li>
-						
-						<li class="page-item page-next">
-							<a class="page-link" href="#">Next Article <i class="ti-angle-double-right"></i></a>
-						</li>
-					</ul>
-				</nav>
-				<div class="blog__wrap">
-					<div class="row">
-						<div class="col-md-6 mar-b-30">
-							<div class="blog__list">
-								<div class="blog__img mar-b-10">
-									<a href="#"><img src="images/RHP_211018_Q57233_DEE_HR-029-1040x670@2x.png" alt="image"></a>
-								</div>
-								<div class="blog__txt">
-									<h5>Lorem Ipsum</h5>
-									<p>Lorem Ipsum has been the industry's standard dummy text ever since the</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 mar-b-30">
-							<div class="blog__list">
-								<div class="blog__img mar-b-10">
-									<a href="#"><img src="images/RHP_211018_Q57233_DEE_HR-029-1040x670@2x.png" alt="image"></a>
-								</div>
-								<div class="blog__txt">
-									<h5>Lorem Ipsum</h5>
-									<p>Lorem Ipsum has been the industry's standard dummy text ever since the</p>
-								</div>
-							</div>
-						</div>
-					</div>
 				</div>
 			</div>
 		</div>
@@ -261,48 +221,7 @@
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="assets/owlcarousel/owl.carousel.js"></script>
-	<script>
-		//owl carousels
-		$(document).ready(function() {
-			var owl = $('.owl-carousel, .owl-carousel01');
-			owl.owlCarousel({
-				margin: 10,
-				nav: true,
-				loop: true,
-				dots: true,
-				autoplay:true,
-				autoplayTimeout:3000,
-				autoplayHoverPause:false,
-				navText: [
-					'<span aria-label="' + 'Previous' + '"><i class="ti-arrow-left"></i></span>',
-					'<span aria-label="' + 'Next' + '"><i class="ti-arrow-right"></i></span>'
-				],
-				responsive: {
-					0: {
-						items: 1
-					}
-				}
-			});
-		})
-
-		//scroll up
-		$('.scrollup').on('click', function(){
-			$('html,body').animate({scrollTop:0}, 500);
-			return false;
-		});
-
-		function scrollToID(theID) {
-				$('html,body').animate({scrollTop: $("#"+theID).offset().top},500);
-		}
-
-		//search
-		$(".search-button").click(function() {
-		$(this)
-			.parent()
-			.toggleClass("open");
-		});
-
-	</script>
+	<script src="js/custom.js"></script>
 
 </body>
 </html>

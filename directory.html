@@ -115,20 +115,24 @@
 		<!--banner content-->
 		<div class="banner__content flat__txt text-center">
 			<div class="container">
-				<h1 class="d-none d-sm-block">Get Inspired</h1>
-				<p class="d-none d-sm-none d-md-block">Lorem Ipsum has been the industry's standard dummy text ever</p>
-				<form>
-					<div class="form-row align-items-center">
-						<div class="col-md-8 my-1">
-							<select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-								<option selected>What are you looking for?</option>
-								<option value="1">One</option>
-								<option value="2">Two</option>
-								<option value="3">Three</option>
-							</select>
-						</div>
-						<div class="col-md-4 my-1">
-							<select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+				<h1>Get Inspired</h1>
+				<p>Lorem Ipsum has been the industry's standard dummy text ever</p>
+				<div class="row">
+					<div class="col-md-8">
+						<form class="direct__form">	
+							<div class="input-group">
+								<select class="custom-select" id="inlineFormCustomSelect">
+									<option selected>What are you looking for?</option>
+									<option value="1">One</option>
+									<option value="2">Two</option>
+									<option value="3">Three</option>
+								</select>
+							</div>
+						</form>
+					</div>
+					<div class="col-md-4">
+						<div>
+							<select class="custom-select" id="inlineFormCustomSelect">
 								<option selected>State</option>
 								<option value="1">One</option>
 								<option value="2">Two</option>
@@ -136,7 +140,7 @@
 							</select>
 						</div>
 					</div>
-				</form>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -359,49 +363,7 @@
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="assets/owlcarousel/owl.carousel.js"></script>
-	<script>
-		//owl carousel
-		$(document).ready(function() {
-			var owl = $('.owl-carousel');
-			owl.owlCarousel({
-				margin: 10,
-				nav: true,
-				loop: true,
-				dots: true,
-				autoplay:true,
-				autoplayTimeout:3000,
-				autoplayHoverPause:false,
-				navText: [
-					'<span aria-label="' + 'Previous' + '"><i class="ti-angle-left"></i></span>',
-					'<span aria-label="' + 'Next' + '"><i class="ti-angle-right"></i></span>'
-				],
-				responsive: {
-					0: {
-						items: 1
-					}
-				}
-			});
-		})
-
-
-		// scroll up
-		$('.scrollup').on('click', function(){
-			$('html,body').animate({scrollTop:0}, 500);
-			return false;
-		});
-
-		function scrollToID(theID) {
-				$('html,body').animate({scrollTop: $("#"+theID).offset().top},500);
-		}
-
-		//search
-		$(".search-button").click(function() {
-		$(this)
-			.parent()
-			.toggleClass("open");
-		});
-
-	</script>
+	<script src="js/custom.js"></script>
 
 </body>
 </html>
