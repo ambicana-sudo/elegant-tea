@@ -8,10 +8,8 @@
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/themify/themify-icons.css">
-	<!-- <link rel="stylesheet" href="fonts/sofia/sofia_font.css"> -->
 	<link rel="stylesheet" href="assets/owlcarousel/owl.carousel.min.css">
 	<link rel="stylesheet" href="assets/owlcarousel/owl.theme.css">
-	<link rel="stylesheet" href="assets/SlidePushMenus/component.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/responsive.css">
 
@@ -21,7 +19,7 @@
 <body>
 	<div class="offcanvas-wrap">
 		<aside class="cartdrawer">
-			<span class="hide float-right" style="display: inline-block; height:30px; width: 30px;"><i class="ti-close"></i></span>
+			<span class="hide float-right"><i class="ti-close"></i></span>
 			<h4 class="sidetitle mar0b-20">My Quote List</h4>
 
 			<div class="quotelist__detail">
@@ -84,15 +82,229 @@
 		<!-- //cartdrawer -->
 
 		<aside class="menudrawer">
-			<span class="hide">x</span>
-			Hello World! I am Menu drawer
+			<span class="hide float-right"><i class="ti-close"></i></span>
+			<div class="mobile__menu">
+				<ul>
+					<li><a href="#" class="active">Home</a></li>
+
+					<li class="drop__item">
+						<a href="#">Hire</a>
+						<div class="menu-drop">
+							<ul>
+								<p class="dropdown-head text-uppercase flat__txt">Menu Heading</p>
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+	
+								<div class="dropdown-divider"></div>
+								
+								<p class="dropdown-head text-uppercase flat__txt">Menu Heading</p>
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+							</ul>
+						</div>
+					</li>
+
+					<li><a href="#">Corporate</a></li>
+
+					<li class="drop__item">
+						<a href="#">Directory</a>
+						<div class="menu-drop">
+							<ul>
+								<p class="dropdown-head text-uppercase flat__txt">Menu Heading</p>
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+	
+								<div class="dropdown-divider"></div>
+								
+								<p class="dropdown-head text-uppercase flat__txt">Menu Heading</p>
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+							</ul>
+						</div>
+					</li>
+
+					<li class="drop__item">
+						<a href="#">Corporate</a>
+						<div class="menu-drop">
+							<ul>
+								<p class="dropdown-head text-uppercase flat__txt">Menu Heading</p>
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+	
+								<div class="dropdown-divider"></div>
+								
+								<p class="dropdown-head text-uppercase flat__txt">Menu Heading</p>
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+							</ul>
+						</div>
+					</li>
+
+					<li class="drop__item">
+						<a href="#">Buy</a>
+						<div class="menu-drop">
+							<ul>
+								<p class="dropdown-head text-uppercase flat__txt">Menu Heading</p>
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+
+								<div class="dropdown-divider"></div>
+								
+								<p class="dropdown-head text-uppercase flat__txt">Menu Heading</p>
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+							</ul>
+						</div>
+					</li>
+
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
 		</aside>
 		<!-- //menudrawer -->
 
 		<!--header-->
-		<header>
+		<header class="header">
 			<div class="container-fluid">
-				<div class="row">
+				<div class="headerwrap">
+					<span id="menudrawer" class="menudrawer-trigger"><span></span></span>
+					<div class="headerlogo">
+						<div class="logo">
+							<a href="#"><img src="images/logo.png" alt="LOGO"></a>
+						</div>
+					</div>
+					<div class="headernav">
+						<div class="navigation">
+							<nav class="navbar navbar-expand-lg">
+								<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+									<span class="navbar-toggler-icon"></span>
+								</button>
+
+								<div class="collapse navbar-collapse" id="navbarSupportedContent">
+									<ul class="navbar-nav mr-auto nav-hover">
+										<li class="nav-item active">
+											<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+										</li>
+										<li class="nav-item dropdown megamenu">
+											<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown  megamenu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												Hire
+											</a>
+											<div class="dropdown-menu flat__txt" aria-labelledby="navbarDropdown megamenu">
+												<div class="rounded-0 m-0 shadow-sm">
+													<div class="p-4">
+														<div class="row">
+														<div class="col-lg-3 mb-4">
+															<h6 class="font-weight-bold text-uppercase">MegaMenu heading</h6>
+															<ul class="list-unstyled">
+															<li class="nav-item"><a href="" class="nav-link text-small pb-0">Unique Features</a></li>
+															<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Image Responsive</a></li>
+															<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Auto Carousel</a></li>
+															<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Newsletter Form</a></li>
+															</ul>
+														</div>
+														<div class="col-lg-3 mb-4">
+															<h6 class="font-weight-bold text-uppercase">MegaMenu heading</h6>
+															<ul class="list-unstyled">
+															<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Unique Features</a></li>
+															<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Image Responsive</a></li>
+															<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Auto Carousel</a></li>
+															<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Newsletter Form</a></li>
+															</ul>
+														</div>
+														<div class="col-lg-3 mb-4">
+															<h6 class="font-weight-bold text-uppercase">MegaMenu heading</h6>
+															<ul class="list-unstyled">
+															<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Unique Features</a></li>
+															<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Image Responsive</a></li>
+															<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Auto Carousel</a></li>
+															<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Newsletter Form</a></li>
+															</ul>
+														</div>
+														<div class="col-lg-3 mb-4">
+															<h6 class="font-weight-bold text-uppercase">MegaMenu heading</h6>
+															<ul class="list-unstyled">
+															<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Unique Features</a></li>
+															<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Image Responsive</a></li>
+															<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Auto Carousel</a></li>
+															<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Newsletter Form</a></li>
+															</ul>
+														</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Corporate</a>
+										</li>
+										<li class="nav-item dropdown">
+											<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												Directory
+											</a>
+											<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+												<a class="dropdown-item" href="#">Action</a>
+												<a class="dropdown-item" href="#">Another action</a>
+											</div>
+										</li>
+										<li class="nav-item dropdown">
+											<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												Inspiration
+											</a>
+											<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+												<a class="dropdown-item" href="#">Action</a>
+												<a class="dropdown-item" href="#">Another action</a>
+											</div>
+										</li>
+										<li class="nav-item dropdown">
+											<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												Buy
+											</a>
+											<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+												<a class="dropdown-item" href="#">Action</a>
+												<a class="dropdown-item" href="#">Another action</a>
+											</div>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Contact</a>
+										</li>
+									</ul>
+								</div>
+							</nav>
+						</div>
+					</div>
+					<div class="useroptions">
+						<div class="header__rgt">
+							<ul class="extra__link">
+								<li class="search__tab">
+									<div class="search">
+										<input type="search" class="search-box" placeholder="search" />
+										<span class="search-button">
+											<i class="ti-search"></i>
+										</span>
+									</div>
+								</li>
+
+								<li>
+									<a href="#"><i class="ti-user"></i></a>
+								</li>
+								<li>
+									<a href="#" id="cartdrawer"><i class="ti-heart"></i></a>
+								</li>
+
+								<li><a href="#"><i class="ti-shopping-cart"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- <div class="row">
 					<div class="col-md-3">
 						<div class="logo">
 							<a href="#"><img src="images/logo.png" alt="LOGO"></a>
@@ -222,7 +434,7 @@
 							</ul>
 						</div>
 					</div>
-				</div>
+				</div> -->
 			</div>
 		</header>
 
@@ -653,85 +865,7 @@
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="assets/owlcarousel/owl.carousel.js"></script>
-	<script src="assets/SlidePushMenus/modernizr.custom.js"></script>
-	<script src="assets/SlidePushMenus/classie.js"></script>
-	<script>
-		$(document).ready(function() {
-			var owl = $('.owl-carousel');
-			owl.owlCarousel({
-				margin: 10,
-				nav: true,
-				loop: true,
-				dots: true,
-				autoplay:true,
-				autoplayTimeout:3000,
-				autoplayHoverPause:false,
-				navText: [
-					'<span aria-label="' + 'Previous' + '"><i class="ti-angle-left"></i></span>',
-					'<span aria-label="' + 'Next' + '"><i class="ti-angle-right"></i></span>'
-				],
-				responsive: {
-					0: {
-						items: 1
-					}
-				}
-			});
-		});
-
-		//cart drawer
-		$(document).ready(function() {
-			$("#cartdrawer").on("click", function(e) {
-				$(".offcanvas-wrap").toggleClass("cartdrawer-active");
-				e.stopPropagation()
-			});
-			$(document).on("click", function(e) {
-				if ($(e.target).is(".cartdrawer, .cartdrawer * ") === false || $(e.target).is(".cartdrawer .hide") === true) {
-					$(".offcanvas-wrap").removeClass("cartdrawer-active");
-				}
-			});
-		});
-
-		//menu drawer
-		$(document).ready(function() {
-			$("#menudrawer").on("click", function(e) {
-				$(".offcanvas-wrap").toggleClass("menudrawer-active");
-				e.stopPropagation()
-			});
-			$(document).on("click", function(e) {
-				if ($(e.target).is(".menudrawer, .menudrawer * ") === false || $(e.target).is(".menudrawer .hide") === true) {
-					$(".offcanvas-wrap").removeClass("menudrawer-active");
-				}
-			});
-		});
-
-		$('.scrollup').on('click', function(){
-			$('html,body').animate({scrollTop:0}, 500);
-			return false;
-		});
-
-		function scrollToID(theID) {
-				$('html,body').animate({scrollTop: $("#"+theID).offset().top},500);
-		}
-
-		$(".search-button").click(function() {
-			var $this = $(this);
-			if ($this.parent().hasClass('open')) {
-
-				if ($this.parent().find('.search-box').val().length > 0) {
-
-					$this.find('.ti-search').toggleClass('ti-search').toggleClass('ti-check');
-					return;
-				}
-			}
-			if ($this.parent().find('.search-box').val().length < 1) {
-				$this.find('.ti-check').toggleClass('ti-check').toggleClass('ti-search');
-			}
-			$this
-			.parent()
-			.toggleClass("open");	
-		});
-
-	</script>
+	<script src="js/custom.js"></script>
 
 </body>
 </html>
