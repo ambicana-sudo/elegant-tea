@@ -197,7 +197,7 @@ a.nav-link, .title{position: relative;}
 
 .tag{background: #000000; padding: 40px 0; text-align: center; font-size: 24px; line-height: 30px;}
 .tag a{text-decoration: underline}
-.section, .content{padding: 30px 0;}
+.section, .content{padding: 40px 0;}
 
 /* split section */
 .split__content{text-align: center; margin-bottom: 30px;}
@@ -211,7 +211,8 @@ a.nav-link, .title{position: relative;}
 
 /* counter */
 .number{font-size: 40px; font-weight:600}
-.counter__list{border-bottom: 1px solid #000;padding-bottom: 60px;}
+.counter{margin: 50px 0;}
+.counter__list{border-bottom: 1px solid #000;padding-bottom: 50px;}
 .counter__item{text-align: center}
 
 /*category*/
@@ -244,8 +245,8 @@ a.nav-link, .title{position: relative;}
 
 
 /* newsletter */
-.newslet{background: url(../images/67192703_2933361273402679_4046908395972100670_n@2x.png) no-repeat center center/cover; padding: 35px;}
-.newslet__content{background: #fff; font-size: 24px; padding: 36px 0px;}
+.newslet{background: url(../images/67192703_2933361273402679_4046908395972100670_n@2x.png) no-repeat center center/cover; padding: 30px;}
+.newslet__content{background: #fff; font-size: 24px; padding: 35px 0px;}
 .form-control{border: 0; border-bottom: 1px solid #000000; padding: 10px 0; background: transparent}
 .btn{border-radius: 0;}
 .btn-default{border: 2px solid #000;}
@@ -265,6 +266,7 @@ a.nav-link, .title{position: relative;}
 .insta__content .icon{background: #ffffff;height: 60px;width: 60px;border-radius: 50%;display: block; line-height: 60px;
 	text-align: center;font-size: 35px;color: #aaa; margin-bottom: 20px; margin-left: auto; margin-right: auto}
 .icon:hover{color: #fff;}
+.insta__content .icon:hover{color: #000;}
 
 
 /*footer */
