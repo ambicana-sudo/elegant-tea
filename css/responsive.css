@@ -9,10 +9,9 @@
     .newslet__txt{margin-bottom: 30px;}
     .event__form{width: 100%}
     .margin-bot > div{margin-bottom: 30px;}
-    .banner__content h1 {
-      margin-bottom: 27px;
-      font-size: 43px !important;}
-      .banner__content p {font-size: 20px;line-height: 30px;}
+    .banner__content h1 { margin-bottom: 27px; font-size: 43px !important;}
+    .banner__content p {font-size: 20px;line-height: 30px;}
+    .footer .logo, .footer__link{margin-bottom: 20px;}
 }
 
 @media (max-width: 767.98px) {
@@ -43,6 +42,7 @@
     .extra__link{top: 13px}
     .extra__link li > a,.search-button{font-size: 20px}
     .header__rgt{margin-left: 16px;}
+    .banner__content{ width: 100%}
 }
 
 
