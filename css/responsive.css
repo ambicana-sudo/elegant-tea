@@ -37,8 +37,10 @@
     .newslet__content {font-size: 18px;}
     .insta__list li, .category__content .category__item, .product__list li {width: 100%; margin: 0 0 10px 0;}
     .login__form{width: 100%;}
-    .search__tab {bottom: 5px;}
-    
+    .logo img{width: 150px;}
+    .search__tab {bottom: 5px; left: 20px;}
+    .extra__link{top: 13px}
+    .extra__link li > a,.search-button{font-size: 20px}
 }
 
 

@@ -21,8 +21,8 @@ $(document).ready(function() {
 	});
 });
 
-//cart drawer
 $(document).ready(function() {
+	//cart drawer 1`
 	$("#cartdrawer").on("click", function(e) {
 		$(".offcanvas-wrap").toggleClass("cartdrawer-active");
 		e.stopPropagation()
@@ -32,10 +32,21 @@ $(document).ready(function() {
 			$(".offcanvas-wrap").removeClass("cartdrawer-active");
 		}
 	});
-});
+	//
 
-//menu drawer
-$(document).ready(function() {
+	//cart drawer 2
+	$("#cartdrawer1").on("click", function(e) {
+		$(".offcanvas-wrap").toggleClass("cartdrawer-active");
+		e.stopPropagation()
+	});
+	$(document).on("click", function(e) {
+		if ($(e.target).is(".cartdrawer1, .cartdrawer1 * ") === false || $(e.target).is(".cartdrawer1 .hide") === true) {
+			$(".offcanvas-wrap").removeClass("cartdrawer-active");
+		}
+	});
+	//
+
+	//menu drawer
 	$("#menudrawer").on("click", function(e) {
 		$(".offcanvas-wrap").toggleClass("menudrawer-active");
 		e.stopPropagation()
@@ -45,6 +56,25 @@ $(document).ready(function() {
 			$(".offcanvas-wrap").removeClass("menudrawer-active");
 		}
 	});
+	//
+
+	//menu dropdown
+	$('.drop__item').each(function() {
+		var $dropdown = $(this);
+
+		$(".mdrop", $dropdown).click(function(e) {
+			e.preventDefault();
+			$div = $(".menu-drop", $dropdown);
+			$div.toggle();
+			$(".menu-drop").not($div).hide();
+			return false;
+		});
+	});
+	$('html').click(function(){
+		$(".menu-drop").hide();
+	});
+	//
+
 });
 
 //scroll up
