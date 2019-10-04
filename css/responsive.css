@@ -38,9 +38,11 @@
     .insta__list li, .category__content .category__item, .product__list li {width: 100%; margin: 0 0 10px 0;}
     .login__form{width: 100%;}
     .logo img{width: 150px;}
-    .search__tab {bottom: 5px; left: 20px;}
+    .search__tab {bottom: 5px;}
+    .search {width: 20px; height: 30px;}
     .extra__link{top: 13px}
     .extra__link li > a,.search-button{font-size: 20px}
+    .header__rgt{margin-left: 16px;}
 }
 
 
@@ -70,9 +72,8 @@
     }
   }
 
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {}
-
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {}
+@media (min-width: 1600px) {
+  .container{max-width: 1560px}
+}

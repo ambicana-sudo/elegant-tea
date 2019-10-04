@@ -36,12 +36,12 @@ $(document).ready(function() {
 
 	//cart drawer 2
 	$("#cartdrawer1").on("click", function(e) {
-		$(".offcanvas-wrap").toggleClass("cartdrawer-active");
+		$(".offcanvas-wrap").toggleClass("cartdrawer1-active");
 		e.stopPropagation()
 	});
 	$(document).on("click", function(e) {
 		if ($(e.target).is(".cartdrawer1, .cartdrawer1 * ") === false || $(e.target).is(".cartdrawer1 .hide") === true) {
-			$(".offcanvas-wrap").removeClass("cartdrawer-active");
+			$(".offcanvas-wrap").removeClass("cartdrawer1-active");
 		}
 	});
 	//
