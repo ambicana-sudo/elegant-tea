@@ -77,6 +77,12 @@ $(document).ready(function() {
 
 });
 
+$(".hide").on("click", function(e) {
+	$(".offcanvas-wrap").removeClass("menudrawer-active");
+	$(".offcanvas-wrap").removeClass("cartdrawer-active");
+	$(".offcanvas-wrap").removeClass("cartdrawer1-active");
+});
+
 //scroll up
 $('.scrollup').on('click', function(){
 	$('html,body').animate({scrollTop:0}, 500);

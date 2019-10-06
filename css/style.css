@@ -460,7 +460,7 @@ td .cancel{background: #000; color: #fff; font-size: 10px;}
   }
   
   .cartdrawer .btn-default{background: #ffffff}
-  .cartdrawer .hide, .menudrawer .hide{display: block; height:30px; width: 30px; text-align: center;background: rgba(255, 255, 255, 0.15); line-height: 30px; border-radius: 50%}
+  .cartdrawer .hide, .menudrawer .hide{display: block; height:30px; width: 30px; text-align: center;background: rgba(255, 255, 255, 0.15); line-height: 30px; border-radius: 50%; cursor: pointer;}
   
   /* fix for megamenu */
   .header .container-fluid {
