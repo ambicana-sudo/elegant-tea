@@ -20,8 +20,8 @@
     .event__form .custom-file{width: 50%;}
     .banner__content h1{font-size: 20px !important; margin-bottom: 12px;}
     .banner__content p { margin-bottom: 20px; font-size: 10px; line-height: 12px;}
-    .banner__content .btn{font-size: 13px; padding: 4px 35px;}
-    .tag{font-size: 18px;}
+    .banner__content .btn{font-size: 11px; padding: 3px 22px;}
+    .tag{font-size: 16px;}
     h2.cat__title{font-size: 30px;}
 }
 
@@ -36,7 +36,7 @@
     .newslet__content {font-size: 18px;}
     .insta__list li, .category__content .category__item, .product__list li {width: 100%; margin: 0 0 10px 0;}
     .login__form{width: 100%;}
-    .logo img{width: 150px;}
+    .headerlogo .logo img{width: 150px;}
     .search__tab {bottom: 5px;}
     .search {width: 20px; height: 30px;}
     .extra__link{top: 13px}
