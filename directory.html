@@ -7,6 +7,7 @@
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-select.min.css">
 	<link rel="stylesheet" href="assets/themify/themify-icons.css">
 	<link rel="stylesheet" href="assets/owlcarousel/owl.carousel.min.css">
 	<link rel="stylesheet" href="assets/owlcarousel/owl.theme.css">
@@ -117,28 +118,30 @@
 		<div class="banner__content flat__txt text-center">
 			<h1>Get Inspired</h1>
 			<p>Lorem Ipsum has been the industry's standard dummy</p>
-			<div class="banner__form">
-				<form>
-					<div class="form-row align-items-center">
-						<div class="col-8 my-1">
-							<select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-								<option selected>What are you looking for?</option>
-								<option value="1">One</option>
-								<option value="2">Two</option>
-								<option value="3">Three</option>
-							</select>
-						</div>
-						<div class="col-4 my-1">
-							<select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-								<option selected>State</option>
-								<option value="1">One</option>
-								<option value="2">Two</option>
-								<option value="3">Three</option>
-							</select>
-						</div>
+			
+		</div>
+
+		<div class="banner__form">
+			<form role="form">
+				<div class="form-row align-items-center">
+					<div class="col-sm-8 my-1">
+						<select id="basic" title="What are you looking for?" class="selectpicker form-control" data-live-search="true">
+							<option>Apple</option>
+							<option>Orange</option>
+							<option>Corn</option>
+							<option>Carrot</option>
+						</select>
 					</div>
-				</form>
-			</div>
+					<div class="col-sm-4 my-1">
+						<select id="basic" title="State" class="selectpicker form-control" data-live-search="true">
+							<option>Apple</option>
+							<option>Orange</option>
+							<option>Corn</option>
+							<option>Carrot</option>
+						</select>
+					</div>
+				</div>
+			</form>
 		</div>
 	</div>
 
@@ -360,6 +363,7 @@
 	<script src="js/jquery-3.3.1.slim.min.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap-select.min.js"></script>
 	<script src="assets/owlcarousel/owl.carousel.js"></script>
 	<script src="js/custom.js"></script>
 
