@@ -408,7 +408,7 @@
 
 		<!--slider-->
 		<div class="slider">
-			<div class="owl-carousel owl-theme">
+			<div class="owl-carousel owl-theme"  style="height: 830px">
 				<div class="item">
 					<div class="overlay"></div>
 					<img src="images/64961760_2138169069628396_4911842792910618624_n@2x.png" alt="" class="img-fluid">
@@ -439,7 +439,7 @@
 		<div class="content">
 			<div class="container">
 				<div class="quote text-center mar-b-30">
-					<h3 class="mar-b-30">Make your special event unforgottable</h3>
+					<h2 class="mar-b-30">Make your special event unforgottable</h2>
 					<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 				</div>
 
@@ -468,7 +468,7 @@
 					</div>
 				</div>
 
-				<div class="category">
+				<div class="category mar-b-60">
 					<div class="category__item">
 						<div class="category__img">
 							<div class="overlay"></div>
@@ -617,7 +617,7 @@
 		</div>
 
 		<!--newsletter-->
-		<div class="newslet">
+		<div class="newslet mar-b-60">
 			<div class="newslet__content">
 				<div class="container">
 					<div class="row">
@@ -834,6 +834,23 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script src="assets/owlcarousel/owl.carousel.js"></script>
 	<script src="js/custom.js"></script>
+	<script>
+		$(document).ready(function(){
+
+$(".dropdown, .btn-group").hover(function(){
+
+	var dropdownMenu = $(this).children(".dropdown-menu");
+
+	if(dropdownMenu.is(":visible")){
+
+		dropdownMenu.parent().toggleClass("open");
+
+	}
+
+});
+
+});
+	</script>
 
 </body>
 </html>

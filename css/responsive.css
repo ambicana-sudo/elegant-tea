@@ -13,14 +13,16 @@
     .banner__content p {font-size: 20px;line-height: 30px;}
     .footer .logo, .footer__link{margin-bottom: 20px;}
     .banner{padding: 50px;}
+    .pagetitle, .mar-b-60{margin-bottom: 40px;}
+    .secftion, .content{padding: 40px 0;}
 }
 
 @media (max-width: 767.98px) {
     .blog__list{margin-bottom: 20px;}
     .direct__form{margin-bottom: 10px;}
     .event__form .custom-file{width: 50%;}
-    .banner__content h1{font-size: 20px !important; margin-bottom: 12px;}
-    .banner__content p { margin-bottom: 20px; font-size: 10px; line-height: 12px;}
+    .banner__content h1{font-size: 26px !important; margin-bottom: 12px;}
+    .banner__content p { margin-bottom: 20px; font-size: 14px; line-height: 12px;}
     .banner__content .btn{font-size: 11px; padding: 3px 22px;}
     .tag{font-size: 16px;}
     h2.cat__title{font-size: 30px;}
@@ -47,6 +49,17 @@
     .extra__link li > a,.search-button{font-size: 20px}
     .header__rgt{margin-left: 16px;}
     .banner__content{ width: 100%}
+
+    .banner__form {
+      position: static;
+      bottom: 0;
+      left: 0;
+      transform: none;
+      width: 100%;
+      z-index: 6;
+      padding: 30px 40px;
+      background: #f1f1f1;
+  }
 }
 
 
@@ -77,6 +90,11 @@
     }
   }
 
+  @media (min-width: 1200px) {
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+  }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1600px) {

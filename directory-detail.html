@@ -111,35 +111,37 @@
 
 	<!--inside content banner-->
 	<div class="inside__banner">
-		<div class="overlay"></div>
-		<img src="images/64961760_2138169069628396_4911842792910618624_n@2x.png" alt="image">
-		<div class="banner__content flat__txt text-center">
-			<h1>Get Inspired</h1>
-			<p>Lorem Ipsum has been the industry's standard dummy</p>
-		</div>
+		<div class="banner__img">
+			<div class="overlay"></div>
+			<img src="images/64961760_2138169069628396_4911842792910618624_n@2x.png" alt="image">
 
-		<div class="banner__form">
-				<form>
-					<div class="form-row align-items-center">
-						<div class="col-sm-8 my-1">
-							<select id="basic" title="What are you looking for?" class="selectpicker form-control" data-live-search="true">
-								<option>Apple</option>
-								<option>Orange</option>
-								<option>Corn</option>
-								<option>Carrot</option>
-							</select>
-						</div>
-						<div class="col-sm-4 my-1">
-							<select id="basic" title="State" class="selectpicker form-control" data-live-search="true">
-								<option>Apple</option>
-								<option>Orange</option>
-								<option>Corn</option>
-								<option>Carrot</option>
-							</select>
-						</div>
-					</div>
-				</form>
+			<div class="banner__content flat__txt text-center">
+				<h1>Get Inspired</h1>
+				<p>Lorem Ipsum has been the industry's standard dummy</p>
 			</div>
+		</div>
+		<div class="banner__form">
+			<form>
+				<div class="form-row align-items-center">
+					<div class="col-sm-8 my-1">
+						<select id="basic" title="What are you looking for?" class="selectpicker form-control" data-live-search="true">
+							<option>Apple</option>
+							<option>Orange</option>
+							<option>Corn</option>
+							<option>Carrot</option>
+						</select>
+					</div>
+					<div class="col-sm-4 my-1">
+						<select id="basic" title="State" class="selectpicker form-control" data-live-search="true">
+							<option>Apple</option>
+							<option>Orange</option>
+							<option>Corn</option>
+							<option>Carrot</option>
+						</select>
+					</div>
+				</div>
+			</form>
+		</div>
 	</div>
 
 	<div class="content">
@@ -150,7 +152,7 @@
 			</div>
 
 			<!--slider-->
-			<div class="slider">
+			<div class="slider2">
 				<div class="owl-carousel02 owl-carousel owl-theme">
 					<div class="item">
 						<img src="images/64961760_2138169069628396_4911842792910618624_n@2x.png" alt="">
@@ -212,7 +214,7 @@
 									<label class="form-check-label" for="exampleCheck1">Sign me up for the newsletter.</label>
 								</div>
 			
-								<button type="submit" class="btn btn-default btn-block black text-uppercase">Send</button>
+								<button type="submit" class="btn btn-default btn-block blackfill text-uppercase">Send</button>
 							</form>
 						</div>
 					</div>
@@ -315,24 +317,31 @@
 	<script src="js/custom.js"></script>
 	<script>
 		$('.owl-carousel02').owlCarousel({
-	stagePadding: 150,
-	center: true,
-    loop:true,
-    margin:10,
-    nav:true,
-    responsive:{
-        0:{
-			stagePadding: 50,
-            items:1
-        },
-        600:{
-			stagePadding: 80,
-            items:1
-        },
-        1000:{
-            items:1
-        }
-    }
+			stagePadding: 150,
+			center: true,
+			loop:true,
+			margin:10,
+			nav:true,
+			autoplay:true,
+			autoplayTimeout:3000,
+			autoplayHoverPause:false,
+			navText: [
+		 		'<span aria-label="' + 'Previous' + '"><i class="ti-angle-left"></i></span>',
+		 		'<span aria-label="' + 'Next' + '"><i class="ti-angle-right"></i></span>'
+			],
+			responsive:{
+				0:{
+					stagePadding: 50,
+					items:1
+				},
+				600:{
+					stagePadding: 80,
+					items:1
+				},
+				1000:{
+					items:1
+				}
+			}
 		});
 
 		// $('.owl-carousel02').owlCarousel({
