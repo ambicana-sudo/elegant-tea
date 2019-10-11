@@ -261,7 +261,7 @@ a.nav-link, .title{position: relative;}
 .split__content .text{padding: 0 15px}
 .title::before {
 	position: absolute;bottom: 0;left: 50%;width: 173px;height: 2px;background: #ddd;content: '';
-	margin: auto;margin-left: auto;text-align: center;margin-left: -102px;
+	margin: auto;margin-left: auto;text-align: center;margin-left: -102px; opacity:1;
 }
 
 
@@ -562,6 +562,9 @@ td .cancel{background: #000; color: #fff; font-size: 10px;}
     background: #fff;
     height: 38px;
 	border: 0; border-radius: 35px; color: #555; line-height: 17px; font-size: 16px
+}
+.bootstrap-select .dropdown-toggle:focus {
+    outline-offset: 0;
 }
 
 .caret {
