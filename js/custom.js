@@ -113,12 +113,12 @@ $(".search-button").click(function() {
 });
 
 //fancy box (gallery popup)
-$('[data-fancybox="images"]').fancybox({
-	thumbs : {
-		autoStart : true,
-		axis      : 'x'
-	}
-});
+// $('[data-fancybox="images"]').fancybox({
+// 	thumbs : {
+// 		autoStart : true,
+// 		axis      : 'x'
+// 	}
+// });
 
 $('.collapse').on('shown.bs.collapse', function(){
 	$(this).parent().find(".ti-plus").removeClass("ti-plus").addClass("ti-minus");

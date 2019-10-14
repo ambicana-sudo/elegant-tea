@@ -295,6 +295,7 @@ a.nav-link, .title{position: relative;}
 }
 
 
+/* product */
 .product__list{margin-left: -10px; margin-right: -10px}
 .product__list li, .photos__list li{width: calc(25% - 20px); float: left; display: flex !important;
 	justify-content: center; margin: 0 10px 30px 10px; overflow: hidden;}
@@ -383,8 +384,8 @@ a.nav-link, .title{position: relative;}
 
 
 /*pagination*/
-.blog .pagination{position: relative;}
-.pg__next, .pg__prev{position: absolute; top: -52px; font-size: 14px;}
+.blog{position: relative;}
+.pg__next, .pg__prev{position: absolute; top: -52px; font-size: 16px;}
 .pg__prev{left: 0}
 .pg__next{right: 0}
 .pagination{justify-content: center; margin-top: 30px;}
@@ -597,3 +598,9 @@ td .cancel{background: #000; color: #fff; font-size: 10px;}
 	top: 0;
 	width: 100%;
 }
+
+.fancybox-button, .fancybox-button:link, .fancybox-button:visited, .fancybox-button:hover {color: #000;background: transparent;}
+
+.fancybox-navigation .fancybox-button {top: calc(80% - 50px) !important;}
+
+.fancybox-caption__body {margin-bottom: 15px;}

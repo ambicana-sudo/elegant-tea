@@ -28,7 +28,9 @@
     h2.cat__title{font-size: 30px;}
     .banner{padding: 20px;}
     .bootstrap-select > .dropdown-toggle{height: 34px; line-height: 17px; font-size: 14px;}
-    
+    .pg__next{
+      top: 47%;
+  }
 }
 
 
