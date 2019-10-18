@@ -45,9 +45,9 @@
     .insta__list li, .category__content .category__item, .product__list li {width: 100%; margin: 0 0 10px 0;}
     .login__form{width: 100%;}
     .headerlogo .logo img{width: 150px;}
-    .search__tab {bottom: 5px;}
+    .search__tab {bottom: 13px;}
     .search {width: 20px; height: 30px;}
-    .extra__link{top: 13px}
+    .extra__link{top: 13px; line-height: 38px;;}
     .extra__link li > a,.search-button{font-size: 20px}
     .header__rgt{margin-left: 16px;}
     .banner__content{ width: 100%}
