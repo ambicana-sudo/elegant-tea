@@ -11,22 +11,27 @@
     .margin-bot > div{margin-bottom: 30px;}
     .banner__content h1 { margin-bottom: 27px; font-size: 43px !important;}
     .banner__content p {font-size: 20px;line-height: 30px;}
+    .inside__banner{height: 350px;}
     .footer .logo, .footer__link{margin-bottom: 20px;}
     .banner{padding: 50px;}
     .pagetitle, .mar-b-60{margin-bottom: 40px;}
-    .secftion, .content{padding: 40px 0;}
+    .section, .content{padding: 40px 0;}
+    .slider2 .owl-theme .owl-nav button.owl-prev {left: 30px;}
+    .slider2 .owl-theme .owl-nav button.owl-next {right: 30px;}
 }
 
 @media (max-width: 767.98px) {
     .blog__list{margin-bottom: 20px;}
     .direct__form{margin-bottom: 10px;}
     .event__form .custom-file{width: 50%;}
+    .banner__content{ width: 100%; top: 40%; padding: 0 20px;;}
     .banner__content h1{font-size: 26px !important; margin-bottom: 12px;}
-    .banner__content p { margin-bottom: 20px; font-size: 14px; line-height: 12px;}
+    .banner__content p { margin-bottom: 20px; font-size: 18px; line-height: 20px;}
     .banner__content .btn{font-size: 11px; padding: 3px 22px;}
     .tag{font-size: 16px;}
     h2.cat__title{font-size: 30px;}
     .banner{padding: 20px;}
+    .inside__banner{height: 258px;}
     .bootstrap-select > .dropdown-toggle{height: 34px; line-height: 17px; font-size: 14px;}
     .pg__next{
       top: 47%;
@@ -50,18 +55,8 @@
     .extra__link{top: 13px; line-height: 38px;;}
     .extra__link li > a,.search-button{font-size: 20px}
     .header__rgt{margin-left: 16px;}
-    .banner__content{ width: 100%}
-
-    .banner__form {
-      position: static;
-      bottom: 0;
-      left: 0;
-      transform: none;
-      width: 100%;
-      z-index: 6;
-      padding: 30px 40px;
-      background: #f1f1f1;
-  }
+    
+    .banner__form {bottom: 0;left: 0; transform: none; width: 100%; z-index: 6; padding: 30px 40px;}
 }
 
 
