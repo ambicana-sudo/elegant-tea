@@ -228,7 +228,7 @@ a.nav-link, .title{position: relative;}
 
 .inside__banner{
 	background-image: url("../images/64961760_2138169069628396_4911842792910618624_n@2x.png");
-	height: 428px; overflow: hidden;background-attachment: fixed;background-position: center;background-repeat: no-repeat;background-size: cover;}
+	height: 428px; overflow: auto;background-attachment: fixed;background-position: center;background-repeat: no-repeat;background-size: cover;}
 .banner__content{padding-bottom: 0 !important;}
 .banner__content h1{margin-bottom: 40px; font-size: 58px !important; font-weight: 600;}
 .banner__content p{margin-bottom: 24px; font-size: 26px; line-height: 30px;}
