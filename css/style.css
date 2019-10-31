@@ -192,7 +192,7 @@ a.nav-link, .title{position: relative;}
 }
 
 .banner__form .dropdown-toggle::after{display: none}
-.nav-item.show .dropdown-toggle::after{content: "\e648"}
+.dropdown:hover .dropdown-toggle::after{content: "\e648"}
 
 .list-unstyled  li.nav-item {width: 50%; float: left;}
 .list-unstyled  li.nav-item a{padding: 15px 0;  font-size: 16px; line-height: 25px !important;}
