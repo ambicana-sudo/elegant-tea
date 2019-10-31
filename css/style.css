@@ -57,10 +57,10 @@ button:focus {
 
 
 /* header */
-.header{padding: 18px 0; border-bottom: 1px solid #ccc;}
+.header{/*padding: 18px 0;*/ border-bottom: 1px solid #ccc;}
 .headerlogo .logo img {width: 195px;}
 .logo img{width: 150px;}
-.extra__link{text-align: right; margin-bottom: 0; line-height: 63px;}
+.extra__link{text-align: right; margin-bottom: 0; line-height: 100px;}
 .extra__link li{display: inline-block;}
 .extra__link li > a {display: block; padding: 15px; font-size: 28px;}
 
@@ -71,7 +71,7 @@ button:focus {
 .headerlogo {
 	flex-shrink: 0;
 	width: 200px;
-	transition: all 0.3s ease; line-height: 92px;
+	transition: all 0.3s ease; line-height: 115px;
 }
 
 .offcanvas-wrap.cartdrawer-active .headerlogo,
@@ -162,9 +162,10 @@ button:focus {
 
 
 /* navigation */
+.navigation .navbar{padding: 0;}
 .navbar-toggler{background: #000; border-radius: 0;}
 .nav-link{font-weight: 500; font-size: 18px;}
-.navbar-nav > .nav-item .nav-link{line-height: 60px;;}
+.navbar-nav > .nav-item .nav-link{line-height: 129px; padding: 0;}
 .navbar-expand-lg .navbar-nav .nav-link{ padding-right: 0; padding-left: 0; margin: 0 15px;}
 a.nav-link, .title{position: relative;}
 .nav-hover li > a:hover::before, 
@@ -180,7 +181,7 @@ a.nav-link, .title{position: relative;}
 	-moz-transform: translateY(-10px);
 	transform: translateY(-10px);
 }
-.navbar-expand-lg .navbar-nav .dropdown-menu{background: rgba(0,0,0,0.85); border-radius: 0; top: 92%}
+.navbar-expand-lg .navbar-nav .dropdown-menu{background: rgba(0,0,0,0.85); border-radius: 0; top: 99%}
 
 .dropdown-menu{transition: all 0.5s linear}
 .dropdown-item{color: #fff; font-size: 14px;}
@@ -195,7 +196,7 @@ a.nav-link, .title{position: relative;}
 
 .list-unstyled  li.nav-item {width: 50%; float: left;}
 .list-unstyled  li.nav-item a{padding: 15px 0;  font-size: 16px; line-height: 25px !important;}
-.list-unstyled li.nav-item a{margin: 0 !important;}
+.list-unstyled li.nav-item a{margin: 0 !important; padding: 5px 0 !important;}
 
 
 /* slider*/
@@ -349,7 +350,7 @@ a.nav-link, .title{position: relative;}
 	
 /*search*/
 .extra__link{position: relative;}
-.search__tab {position: absolute;left: 0;/* margin-top: 15px;*/ bottom: 30px;}
+.search__tab {position: absolute;left: 0;/* margin-top: 15px;*/ bottom: 50px;}
 .search {width: 30px;height: 32px;line-height: 10px;position: relative;overflow: hidden;transition: all 0.5s ease;}
 .search__tab.open .search {width: 100%;}
 .search__tab.open {width: 100%;}
