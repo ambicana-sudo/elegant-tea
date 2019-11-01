@@ -1,17 +1,21 @@
 @media (max-width: 991.98px) {
     .title{margin-top: 40px}
     .tag{padding: 30px 0}
+
     .slide__txt{padding-top: 0px;width: 100%;left: 0;transform: translateX(0%);}
     .slide__txt h1 {margin-bottom: 20px;}
     .slide__txt h3 {margin-bottom: 32px; font-size: 20px !important;}
+
     .direct__form{margin-top: 30px;}
     .insta__list li, .product__list li {width: calc(33.3333% - 20px);}
     .newslet__txt{margin-bottom: 30px;}
     .event__form{width: 100%}
     .margin-bot > div{margin-bottom: 30px;}
+
     .banner__content h1 { margin-bottom: 27px; font-size: 43px !important;}
     .banner__content p {font-size: 20px;line-height: 30px;}
-    .inside__banner{height: 350px;}
+    .inside__banner, .short.slider{height: 350px;}
+    
     .footer .logo, .footer__link{margin-bottom: 20px;}
     .banner{padding: 50px;}
     .pagetitle, .mar-b-60{margin-bottom: 40px;}
@@ -24,18 +28,19 @@
     .blog__list{margin-bottom: 20px;}
     .direct__form{margin-bottom: 10px;}
     .event__form .custom-file{width: 50%;}
+
     .banner__content{ width: 100%; top: 40%; padding: 0 20px;;}
     .banner__content h1{font-size: 26px !important; margin-bottom: 12px;}
     .banner__content p { margin-bottom: 20px; font-size: 18px; line-height: 20px;}
     .banner__content .btn{font-size: 11px; padding: 3px 22px;}
+
     .tag{font-size: 16px;}
     h2.cat__title{font-size: 30px;}
     .banner{padding: 20px;}
-    .inside__banner{height: 258px;}
+    .inside__banner, .short.slider{height: 258px;}
     .bootstrap-select > .dropdown-toggle{height: 34px; line-height: 17px; font-size: 14px;}
-    .pg__next{
-      top: 47%;
-  }
+    .pg__next{top: 47%;}
+    .owl-carousel03{height: 265px;}
 }
 
 
@@ -43,6 +48,7 @@
     h2{font-size: 30px;}
     h3{font-size: 24px;}
     h4{font-size: 20px;}
+
     .custom-select,.direct__form{background: #eee}
     .section__title::before {margin: 0;}
     .category__content{margin-left: 0; margin-right: 0;}
@@ -50,12 +56,13 @@
     .insta__list li, .category__content .category__item, .product__list li {width: 100%; margin: 0 0 10px 0;}
     .login__form{width: 100%;}
     .headerlogo .logo img{width: 150px;}
+    
     .search__tab {bottom: 13px;}
     .search {width: 20px; height: 30px;}
     .extra__link{top: 13px; line-height: 38px;;}
     .extra__link li > a,.search-button{font-size: 20px}
     .header__rgt{margin-left: 16px;}
-    
+    .short.slider{background: #cccc;}
     .banner__form {bottom: 0;left: 0; transform: none; width: 100%; z-index: 6; padding: 30px 40px;}
 }
 
@@ -66,7 +73,10 @@
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px)  and (max-width: 991.98px) {.newslet__btn::before{right: 95px;}}
+@media (min-width: 768px)  and (max-width: 991.98px) {
+  .newslet__btn::before{right: 95px;}
+  .owl-carousel03{height: 338px;}
+}
 
 @media all and (min-width: 800px) {
     .fancybox-thumbs {
@@ -81,16 +91,11 @@
       background: rgba(0, 0, 0, 0.3);
     }
     
-    .fancybox-show-thumbs .fancybox-inner {
-      right: 0;
-      bottom: 95px;
-    }
+    .fancybox-show-thumbs .fancybox-inner {right: 0; bottom: 95px;}
   }
 
   @media (min-width: 1200px) {
-    .dropdown:hover .dropdown-menu {
-        display: block;
-    }
+    .dropdown:hover .dropdown-menu {display: block;}
   }
 
 /* Extra large devices (large desktops, 1200px and up) */
